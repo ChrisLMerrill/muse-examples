@@ -117,6 +117,20 @@
         }
       }
     }, {
+      "type" : "verify",
+      "sources" : {
+        "condition" : {
+          "type" : "exists",
+          "source" : {
+            "type" : "element-linktext",
+            "source" : {
+              "value" : "ChrisLMerrill/muse",
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }, {
       "type" : "click-element",
       "sources" : {
         "element" : {
