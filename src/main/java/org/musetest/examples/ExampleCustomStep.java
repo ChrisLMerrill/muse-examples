@@ -3,7 +3,6 @@ package org.musetest.examples;
 import org.musetest.core.*;
 import org.musetest.core.context.*;
 import org.musetest.core.events.*;
-import org.musetest.core.resource.*;
 import org.musetest.core.step.*;
 import org.musetest.core.step.descriptor.*;
 import org.musetest.core.steptest.*;

@@ -10,12 +10,11 @@ repositories
 
 dependencies
     {
-	  compile('org.musetest:muse-core:0.1+')
+    compile('org.musetest:muse-core:0.1+')
     }
 
 /* For creating the examples zip file */
 task zip(type:Zip) {
-//    archiveName 'muse-examples.zip'
     from projectDir
     exclude 'build/**'
     exclude '.*'
