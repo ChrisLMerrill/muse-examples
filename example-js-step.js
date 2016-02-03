@@ -2,14 +2,14 @@ var MuseResourceType = STEP_RESOURCE;
 
 function executeStep(context, params)
     {
-    var string1 = context.getLocalVariable("string1");
+    var string1 = getLocalVariable("string1");
     logMessage("string1=" + string1);
     
     if (string1 !== "value1")
     	return failureResult("it failed :(");
     
-    if (!(params.ghi))
-    	return failureResult("parameter ghi is not true :(");
+    if (!(params.xyz))
+    	return failureResult("parameter xyz is not true :(");
     
     string1 = string1 + "+" + params.abc;
     logMessage("now, string1=" + string1);

@@ -19,6 +19,36 @@
       }
     }, {
       "type" : "while",
+      "children" : [ {
+        "type" : "increment-variable",
+        "sources" : {
+          "amount" : {
+            "value" : 1,
+            "type" : "integer"
+          },
+          "name" : {
+            "value" : "counter",
+            "type" : "string"
+          }
+        }
+      }, {
+        "type" : "log-message",
+        "sources" : {
+          "message" : {
+            "type" : "add",
+            "sourceList" : [ {
+              "value" : "incremented counter to ",
+              "type" : "string"
+            }, {
+              "type" : "variable",
+              "source" : {
+                "value" : "counter",
+                "type" : "string"
+              }
+            } ]
+          }
+        }
+      } ],
       "sources" : {
         "condition" : {
           "type" : "lessthan",
@@ -36,37 +66,7 @@
             }
           }
         }
-      },
-      "children" : [ {
-        "type" : "increment-variable",
-        "sources" : {
-          "amount" : {
-            "value" : 1,
-            "type" : "integer"
-          },
-          "name" : {
-            "value" : "counter",
-            "type" : "string"
-          }
-        }
-      }, {
-        "type" : "log-message",
-        "sources" : {
-          "message" : {
-            "type" : "concatenate",
-            "sourceList" : [ {
-              "value" : "incremented counter to ",
-              "type" : "string"
-            }, {
-              "type" : "variable",
-              "source" : {
-                "value" : "counter",
-                "type" : "string"
-              }
-            } ]
-          }
-        }
-      } ]
+      }
     }, {
       "type" : "verify",
       "sources" : {
@@ -87,7 +87,8 @@
           }
         }
       }
-    } ]
+    } ],
+    "sources" : { }
   },
   "defaultVariables" : { }
 }

@@ -60,11 +60,20 @@
 <p>Demonstrates how element locators may be defined in one place and referenced from many places to avoid duplication. The <i>click</i> step
     references a locator defined in <i>github-homepage.json</i>. </p>
 
-<h2>8 - Using a custom step</h2>
+<h2>8 - Using a custom step (Java)</h2>
 <p>This test calls a custom step defined in the project. It passes 3 parameters to it, which the custom step writes to the event log.
     The custom step is implemented in Java - Look for <i>ExampleCustomStep.java</i> under the <i>src</i> folder. To run this test successfully,
     you must first build the custom step, which requires Java JDK 8 and Gradle on your path. If you have those, run <i>gradle build</i> in the
     examples folder.</p>
+
+<h2>9 - Using a custom step (Javascript)</h2>
+<p>This test calls a custom step defined in the project. It passes 2 parameters to it (abc and xyz).
+    The custom step is implemented in Javascript (example-js-step.js). The test sets two local variables (string1="value1" and int1=17) and passes in
+    two parameters (abc="aaa" and xyz=true).
+    The custom step fails if the the "xyz" paramter evaluates to false or if the string1 variable is not "value1". If then appends "+" and the value
+    of the abc parameter to the string1 value and sets string1 to this new value. It also multiples the int1 variable by 2.
+    After returning, the test then verifies the changes to variables string1 and int1.</p>
+
 
 </body>
 </html>
