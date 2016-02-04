@@ -18,4 +18,5 @@ task zip(type:Zip) {
     from projectDir
     exclude 'build/**'
     exclude '.*'
+    into baseName + '-' + version
     }
