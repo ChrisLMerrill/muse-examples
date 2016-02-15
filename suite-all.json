@@ -8,6 +8,8 @@
   	"ex5-FunctionVariableScope",
   	"ex6-webdriver-github-search",
   	"ex7-webdriver-locator-reuse",
-  	"ex8-use-custom-step"
+  	"ex8-use-custom-step",
+  	"ex9-use-custom-javascript-step",
+  	"ex10-parameterized"
   	]
 }
