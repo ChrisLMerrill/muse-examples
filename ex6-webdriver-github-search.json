@@ -138,8 +138,10 @@
         }
       }
     }, {
-      "type" : "close-browser"
-    } ]
+      "type" : "close-browser",
+      "sources" : { }
+    } ],
+    "sources" : { }
   },
   "defaultVariables" : {
     "search1" : {
