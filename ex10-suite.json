@@ -1,0 +1,9 @@
+{ "type":"parameterized_test_suite",
+  "testId": "ex10-parameterized",
+  "parameters":
+  	[
+      {"link_to_click" : "HTTP Server"},
+      {"link_to_click" : "Maven"},
+      {"link_to_click" : "Subversion"}
+  	]
+}
