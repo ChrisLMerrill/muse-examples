@@ -45,8 +45,21 @@ public class ExampleCustomStep extends BaseStep
 
     private MuseProject _project;
     private Map<String, ValueSourceConfiguration> _sources;
-
-    final static Logger LOG = LoggerFactory.getLogger(ExampleCustomStep.class);
     }
 
 
+
+class temp
+    {
+    public temp()
+        {
+        try
+            {
+            new ExampleCustomStep(null, null);
+            }
+        catch (StepConfigurationError stepConfigurationError)
+            {
+            ;
+            }
+        }
+    }

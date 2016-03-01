@@ -1,12 +1,30 @@
 {
   "type" : "page",
   "elements" : {
+    "login" : {
+      "locator" : {
+        "type" : "element-linktext",
+        "source" : {
+          "value" : "Sign in",
+          "type" : "string"
+        }
+      }
+    },
     "explore" : {
       "locator" : {
         "type" : "element-linktext",
         "source" : {
-            "value" : "Explore",
-            "type" : "string"
+          "value" : "Explore",
+          "type" : "string"
+        }
+      }
+    },
+    "browser" : {
+      "locator" : {
+        "type" : "resource",
+        "source" : {
+          "value" : "firefox",
+          "type" : "string"
         }
       }
     }
