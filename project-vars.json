@@ -1,19 +1,19 @@
 {
   "type" : "variables",
   "variables" : {
-      "browser" : {
-            "type" : "resource",
-            "source" : {
-              "value" : "firefox",
-              "type" : "string"
-            }
-      },
-      "browser-provider" : {
-            "type" : "resource",
-            "source" : {
-              "value" : "local-provider",
-              "type" : "string"
-            }
+    "browser" : {
+      "type" : "resource",
+      "source" : {
+        "value" : "firefox",
+        "type" : "string"
       }
+    },
+    "browser-provider" : {
+      "type" : "resource",
+      "source" : {
+        "value" : "local-provider",
+        "type" : "string"
+      }
+    }
   }
 }

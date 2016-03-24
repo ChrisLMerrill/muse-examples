@@ -7,7 +7,6 @@ import org.musetest.core.step.*;
 import org.musetest.core.step.descriptor.*;
 import org.musetest.core.steptest.*;
 import org.musetest.core.values.*;
-import org.slf4j.*;
 
 import java.util.*;
 
