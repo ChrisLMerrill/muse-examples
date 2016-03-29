@@ -4,4 +4,4 @@ This is a project containing examples for the Muse Test Framework (https://githu
 
 Clone it and open EXAMPLES.html for descriptions of the examples.
 
-Binary distributions of these examples, the Muse Test Framework and MuseIDE is available at: http://ide4selenium.com/#/download
+Binary distributions of these examples as well as the Muse Test Framework and MuseIDE is available at: http://ide4selenium.com/#/download
