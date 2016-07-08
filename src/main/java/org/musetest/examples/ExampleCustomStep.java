@@ -20,21 +20,22 @@ import java.util.*;
 @MuseStepLongDescription("Each parameter will be resolved and the name and value will be formatted into a MessageEvent.")
 @MuseTypeId("log-params")
 @MuseInlineEditString("log all params")
+@SuppressWarnings("unused")  // called reflectively by tests in the project
 public class ExampleCustomStep extends BaseStep
     {
     public ExampleCustomStep(StepConfiguration config, MuseProject project) throws StepConfigurationError
         {
         super(config);
-        _sources = config.getSources();
         _project = project;
         }
         
     @Override
     public StepExecutionResult executeImplementation(StepExecutionContext context) throws StepConfigurationError
         {
-        for (String name : _sources.keySet())
+        Map<String, ValueSourceConfiguration> sources = getConfiguration().getSources();
+        for (String name : sources.keySet())
         	{
-        	ValueSourceConfiguration config = _sources.get(name);
+        	ValueSourceConfiguration config = sources.get(name);
         	MuseValueSource source = config.createSource(_project); 
         	Object value = getValue(source, context, true, Object.class);
         	context.getTestExecutionContext().raiseEvent(new MessageEvent(name + "=" + value));
@@ -43,22 +44,4 @@ public class ExampleCustomStep extends BaseStep
         }
 
     private MuseProject _project;
-    private Map<String, ValueSourceConfiguration> _sources;
-    }
-
-
-
-class temp
-    {
-    public temp()
-        {
-        try
-            {
-            new ExampleCustomStep(null, null);
-            }
-        catch (StepConfigurationError stepConfigurationError)
-            {
-            ;
-            }
-        }
     }

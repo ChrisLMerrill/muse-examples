@@ -22,10 +22,6 @@
       "children" : [ {
         "type" : "increment-variable",
         "sources" : {
-          "amount" : {
-            "value" : 1,
-            "type" : "integer"
-          },
           "name" : {
             "value" : "counter",
             "type" : "string"

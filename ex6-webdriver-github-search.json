@@ -73,10 +73,7 @@
       }, {
         "type" : "increment-variable",
         "sources" : {
-          "amount" : {
-            "value" : 1,
-            "type" : "integer"
-          },
+          "amount" : null,
           "name" : {
             "value" : "counter",
             "type" : "string"
