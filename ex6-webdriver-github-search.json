@@ -1,10 +1,25 @@
 {
   "type" : "steppedtest",
+  "defaultVariables" : {
+    "search1" : {
+      "value" : "selenium",
+      "type" : "string"
+    },
+    "search2" : {
+      "value" : "muse",
+      "type" : "string"
+    },
+    "search3" : {
+      "value" : "muse test framework",
+      "type" : "string"
+    }
+  },
   "step" : {
     "type" : "compound",
     "metadata" : {
       "description" : "Find the Muse site on GitHub and read the wiki"
     },
+    "sources" : { },
     "children" : [ {
       "type" : "open-browser",
       "sources" : {
@@ -45,9 +60,26 @@
       }
     }, {
       "type" : "while",
+      "sources" : {
+        "condition" : {
+          "type" : "lessthan",
+          "sourceMap" : {
+            "left" : {
+              "type" : "variable",
+              "source" : {
+                "value" : "counter",
+                "type" : "string"
+              }
+            },
+            "right" : {
+              "value" : 4,
+              "type" : "integer"
+            }
+          }
+        }
+      },
       "children" : [ {
         "type" : "callfunction",
-        "children" : [ ],
         "sources" : {
           "id" : {
             "value" : "github-search-function",
@@ -69,35 +101,17 @@
               } ]
             }
           }
-        }
+        },
+        "children" : [ ]
       }, {
         "type" : "increment-variable",
         "sources" : {
-          "amount" : null,
           "name" : {
             "value" : "counter",
             "type" : "string"
           }
         }
-      } ],
-      "sources" : {
-        "condition" : {
-          "type" : "lessthan",
-          "sourceMap" : {
-            "left" : {
-              "type" : "variable",
-              "source" : {
-                "value" : "counter",
-                "type" : "string"
-              }
-            },
-            "right" : {
-              "value" : 4,
-              "type" : "integer"
-            }
-          }
-        }
-      }
+      } ]
     }, {
       "type" : "verify",
       "sources" : {
@@ -137,21 +151,6 @@
     }, {
       "type" : "close-browser",
       "sources" : { }
-    } ],
-    "sources" : { }
-  },
-  "defaultVariables" : {
-    "search1" : {
-      "value" : "selenium",
-      "type" : "string"
-    },
-    "search2" : {
-      "value" : "muse",
-      "type" : "string"
-    },
-    "search3" : {
-      "value" : "muse test framework",
-      "type" : "string"
-    }
+    } ]
   }
 }
