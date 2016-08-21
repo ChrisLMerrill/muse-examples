@@ -2,7 +2,7 @@ var MuseResourceType = STEP_RESOURCE;
 
 function executeStep(context, params)
     {
-    var string1 = getLocalVariable("string1");
+    var string1 = getVariable("string1");
     logMessage("string1=" + string1);
     
     if (string1 !== "value1")
@@ -13,13 +13,13 @@ function executeStep(context, params)
     
     string1 = string1 + "+" + params.abc;
     logMessage("now, string1=" + string1);
-    setLocalVariable("string1", string1);
+    setVariable("string1", string1);
     
-    var int1 = getLocalVariable("int1");
+    var int1 = getVariable("int1");
     logMessage("int1=" + int1);
     int1 = int1 * 2;
     logMessage("now, int1=" + int1);
-    setLocalVariable("int1", int1);
+    setVariable("int1", int1);
     
     return successResult("it worked!");
     }

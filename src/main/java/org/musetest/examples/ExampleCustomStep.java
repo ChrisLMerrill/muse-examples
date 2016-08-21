@@ -3,6 +3,7 @@ package org.musetest.examples;
 import org.musetest.core.*;
 import org.musetest.core.context.*;
 import org.musetest.core.events.*;
+import org.musetest.core.resource.*;
 import org.musetest.core.step.*;
 import org.musetest.core.step.descriptor.*;
 import org.musetest.core.steptest.*;
@@ -30,7 +31,7 @@ public class ExampleCustomStep extends BaseStep
         }
         
     @Override
-    public StepExecutionResult executeImplementation(StepExecutionContext context) throws StepConfigurationError
+    public StepExecutionResult executeImplementation(StepExecutionContext context) throws MuseInstantiationException, ValueSourceResolutionError
         {
         Map<String, ValueSourceConfiguration> sources = getConfiguration().getSources();
         for (String name : sources.keySet())
@@ -38,7 +39,7 @@ public class ExampleCustomStep extends BaseStep
         	ValueSourceConfiguration config = sources.get(name);
         	MuseValueSource source = config.createSource(_project); 
         	Object value = getValue(source, context, true, Object.class);
-        	context.getTestExecutionContext().raiseEvent(new MessageEvent(name + "=" + value));
+        	context.raiseEvent(new MessageEvent(name + "=" + value));
         	}
         return new BasicStepExecutionResult(StepExecutionStatus.COMPLETE);
         }
