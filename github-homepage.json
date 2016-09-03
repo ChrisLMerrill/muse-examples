@@ -19,11 +19,11 @@
         }
       }
     },
-    "browser" : {
+    "search" : {
       "locator" : {
-        "type" : "resource",
+        "type" : "element-name",
         "source" : {
-          "value" : "firefox",
+          "value" : "q",
           "type" : "string"
         }
       }

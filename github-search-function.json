@@ -13,10 +13,16 @@
           "type" : "string"
         },
         "value" : {
-          "type" : "element-name",
-          "source" : {
-            "value" : "q",
-            "type" : "string"
+          "type" : "page-element",
+          "sourceMap" : {
+            "page" : {
+              "value" : "github-homepage",
+              "type" : "string"
+            },
+            "element" : {
+              "value" : "search",
+              "type" : "string"
+            }
           }
         }
       }
@@ -60,6 +66,7 @@
           }
         }
       }
-    } ]
+    } ],
+    "sources" : { }
   }
 }
