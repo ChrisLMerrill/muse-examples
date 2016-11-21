@@ -132,9 +132,9 @@
       "type" : "click-element",
       "sources" : {
         "element" : {
-          "type" : "element-xpath",
+          "type" : "element-linktext",
           "source" : {
-            "value" : "//h3[contains(@class, 'repo-list-name')]/a",
+            "value" : "ChrisLMerrill/muse",
             "type" : "string"
           }
         }

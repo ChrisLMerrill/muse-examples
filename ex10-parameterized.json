@@ -1,21 +1,27 @@
 {
   "type" : "steppedtest",
+  "defaultVariables" : {
+    "link_to_click" : {
+      "value" : "Ant",
+      "type" : "string"
+    }
+  },
   "step" : {
     "type" : "scope",
     "children" : [ {
       "type" : "open-browser",
       "sources" : {
         "provider" : {
-          "type" : "resource",
+          "type" : "variable",
           "source" : {
-            "value" : "local-provider",
+            "value" : "browser-provider",
             "type" : "string"
           }
         },
         "browser" : {
-          "type" : "resource",
+          "type" : "variable",
           "source" : {
-            "value" : "firefox",
+            "value" : "browser",
             "type" : "string"
           }
         }
@@ -29,18 +35,7 @@
         }
       }
     }, {
-      "type" : "click-element",
-      "sources" : {
-        "element" : {
-          "type" : "element-linktext",
-          "source" : {
-            "value" : "Projects",
-            "type" : "string"
-          }
-        }
-      }
-    }, {
-      "type" : "verify",
+      "type" : "wait",
       "sources" : {
         "condition" : {
           "type" : "exists",
@@ -71,15 +66,25 @@
         }
       }
     }, {
+      "type" : "verify",
+      "sources" : {
+        "condition" : {
+          "type" : "equals",
+          "sourceMap" : {
+            "left" : {
+              "type" : "page-title"
+            },
+            "right" : {
+              "value" : "Apache Ant - Welcome",
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }, {
       "type" : "close-browser",
       "sources" : { }
     } ],
     "sources" : { }
-  },
-  "defaultVariables" : {
-    "link_to_click" : {
-      "value" : "Ant",
-      "type" : "string"
-    }
   }
 }
