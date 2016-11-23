@@ -18,6 +18,15 @@
           "type" : "string"
         }
       }
+    },
+    "search" : {
+      "locator" : {
+        "type" : "element-name",
+        "source" : {
+          "value" : "q",
+          "type" : "string"
+        }
+      }
     }
   },
   "tags" : [ ]
