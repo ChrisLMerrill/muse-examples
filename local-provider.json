@@ -2,14 +2,17 @@
   "type" : "webdriver-provider-list",
   "providers" : [ {
     "type" : "firefox-marionette-provider",
-    "pathToExe" : "D:\\Work\\MuseProject\\webdrivers\\marionette\\0.11.1\\geckodriver.exe"
+    "os" : "Windows",
+    "absolutePath" : "C:\\PathToMy\\webdrivers\\marionette\\0.11.1\\geckodriver.exe"
   }, {
     "type" : "safaridriver-provider"
   }, {
     "type" : "chromedriver-provider",
-    "pathToExe" : "D:\\Work\\MuseProject\\webdrivers\\chromedriver\\2.25\\chromedriver.exe"
+    "os" : "Windows",
+    "absolutePath" : "C:\\PathToMy\\webdrivers\\chromedriver\\2.25\\chromedriver.exe"
   }, {
     "type" : "iexploredriver-provider",
-    "pathToExe" : "C:\\PathToMy\\webdrivers\\iedriver\\2.47\\IEDriverServer64.exe"
+    "os" : "Windows",
+    "absolutePath" : "C:\\PathToMy\\webdrivers\\iedriver\\2.47\\IEDriverServer64.exe"
   } ]
 }

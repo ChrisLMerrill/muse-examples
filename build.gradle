@@ -1,6 +1,6 @@
 apply plugin: 'java'
 
-version 0.5
+version 0.6
 
 repositories
     {
@@ -10,7 +10,7 @@ repositories
 
 dependencies
     {
-    compile('org.musetest:muse-core:0.5+')
+    compile('org.musetest:muse-core:0.6+')
     }
 
 /* For creating the examples zip file */
