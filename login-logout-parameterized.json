@@ -1,0 +1,6 @@
+{
+  "type" : "parameterized_test_suite",
+  "dataTableId" : "user-password-class",
+  "testId" : "login-logout",
+  "tags" : [ ]
+}

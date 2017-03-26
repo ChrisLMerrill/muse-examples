@@ -2,8 +2,8 @@
   "type" : "selenium-capabilities",
   "capabilities" : {
     "browserName" : "chrome",
-    "platform" : "ANY",
-    "version" : "ANY"
+    "version" : "ANY",
+    "platform" : "ANY"
   },
   "tags" : [ ]
 }

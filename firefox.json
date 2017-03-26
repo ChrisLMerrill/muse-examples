@@ -1,9 +1,9 @@
 {
-  "type":"selenium-capabilities",
-  "capabilities":
-  {
-    "browserName":"firefox",
-    "platform":"ANY",
-    "version":"ANY"
-  }
+  "type" : "selenium-capabilities",
+  "capabilities" : {
+    "browserName" : "firefox",
+    "version" : "",
+    "platform" : "ANY"
+  },
+  "tags" : [ ]
 }

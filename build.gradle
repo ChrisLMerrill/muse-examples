@@ -10,7 +10,7 @@ repositories
 
 dependencies
     {
-    compile('org.musetest:muse-core:0.7+')
+    compile('org.musetest:muse-core:0.9+')
     }
 
 /* For creating the examples zip file */

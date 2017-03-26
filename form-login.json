@@ -1,0 +1,132 @@
+{
+  "type" : "function",
+  "step" : {
+    "type" : "scope",
+    "children" : [ {
+      "type" : "click-element",
+      "sources" : {
+        "element" : {
+          "type" : "element-linktext",
+          "source" : {
+            "value" : "Form Authentication",
+            "type" : "string"
+          }
+        }
+      }
+    }, {
+      "type" : "wait",
+      "sources" : {
+        "condition" : {
+          "type" : "exists",
+          "source" : {
+            "type" : "page-element",
+            "sourceMap" : {
+              "page" : {
+                "value" : "login-page",
+                "type" : "string"
+              },
+              "element" : {
+                "value" : "username",
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    }, {
+      "type" : "send-keys",
+      "sources" : {
+        "keys" : {
+          "type" : "variable",
+          "source" : {
+            "value" : "username",
+            "type" : "string"
+          }
+        },
+        "clear" : {
+          "value" : true,
+          "type" : "boolean"
+        },
+        "element" : {
+          "type" : "page-element",
+          "sourceMap" : {
+            "page" : {
+              "value" : "login-page",
+              "type" : "string"
+            },
+            "element" : {
+              "value" : "username",
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }, {
+      "type" : "send-keys",
+      "sources" : {
+        "keys" : {
+          "type" : "variable",
+          "source" : {
+            "value" : "password",
+            "type" : "string"
+          }
+        },
+        "clear" : {
+          "value" : true,
+          "type" : "boolean"
+        },
+        "element" : {
+          "type" : "page-element",
+          "sourceMap" : {
+            "page" : {
+              "value" : "login-page",
+              "type" : "string"
+            },
+            "element" : {
+              "value" : "password",
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }, {
+      "type" : "submit-element",
+      "sources" : {
+        "element" : {
+          "type" : "page-element",
+          "sourceMap" : {
+            "page" : {
+              "value" : "login-page",
+              "type" : "string"
+            },
+            "element" : {
+              "value" : "login-form",
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }, {
+      "type" : "wait",
+      "sources" : {
+        "condition" : {
+          "type" : "exists",
+          "source" : {
+            "type" : "page-element",
+            "sourceMap" : {
+              "page" : {
+                "value" : "login-page",
+                "type" : "string"
+              },
+              "element" : {
+                "value" : "content-section",
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    } ]
+  },
+  "tags" : [ ]
+}

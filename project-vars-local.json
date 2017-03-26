@@ -1,0 +1,13 @@
+{
+  "type" : "variables",
+  "variables" : {
+    "browser" : {
+      "source" : {
+        "type" : "string",
+        "value" : "firefox"
+      },
+      "type" : "resource"
+    }
+  },
+  "tags" : [ ]
+}

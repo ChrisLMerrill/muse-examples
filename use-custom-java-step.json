@@ -1,0 +1,28 @@
+{
+  "type" : "steppedtest",
+  "defaultVariables" : { },
+  "step" : {
+    "type" : "compound",
+    "children" : [ {
+      "type" : "log-params",
+      "sources" : {
+        "abc" : {
+          "value" : "aaa",
+          "type" : "string"
+        },
+        "def" : {
+          "value" : 123,
+          "type" : "integer"
+        },
+        "ghi" : {
+          "value" : true,
+          "type" : "boolean"
+        }
+      }
+    } ],
+    "metadata" : {
+      "description" : null
+    }
+  },
+  "tags" : [ ]
+}

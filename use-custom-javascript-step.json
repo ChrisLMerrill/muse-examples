@@ -1,0 +1,89 @@
+{
+  "type" : "steppedtest",
+  "defaultVariables" : { },
+  "step" : {
+    "type" : "compound",
+    "children" : [ {
+      "type" : "store-variable",
+      "sources" : {
+        "name" : {
+          "value" : "string1",
+          "type" : "string"
+        },
+        "value" : {
+          "value" : "value1",
+          "type" : "string"
+        }
+      }
+    }, {
+      "type" : "store-variable",
+      "sources" : {
+        "name" : {
+          "value" : "int1",
+          "type" : "string"
+        },
+        "value" : {
+          "value" : 17,
+          "type" : "integer"
+        }
+      }
+    }, {
+      "type" : "example-js-step",
+      "sources" : {
+        "abc" : {
+          "value" : "aaa",
+          "type" : "string"
+        },
+        "xyz" : {
+          "value" : true,
+          "type" : "boolean"
+        }
+      }
+    }, {
+      "type" : "verify",
+      "sources" : {
+        "condition" : {
+          "type" : "equals",
+          "sourceMap" : {
+            "left" : {
+              "type" : "variable",
+              "source" : {
+                "value" : "string1",
+                "type" : "string"
+              }
+            },
+            "right" : {
+              "value" : "value1+aaa",
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }, {
+      "type" : "verify",
+      "sources" : {
+        "condition" : {
+          "type" : "equals",
+          "sourceMap" : {
+            "left" : {
+              "type" : "variable",
+              "source" : {
+                "value" : "int1",
+                "type" : "string"
+              }
+            },
+            "right" : {
+              "value" : 34,
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    } ],
+    "sources" : { },
+    "metadata" : {
+      "description" : null
+    }
+  },
+  "tags" : [ ]
+}

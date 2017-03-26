@@ -1,0 +1,52 @@
+{
+  "type" : "context-initializers",
+  "variableListInitializers" : [ {
+    "includeCondition" : {
+      "value" : true,
+      "type" : "boolean"
+    },
+    "listId" : {
+      "value" : "project-vars",
+      "type" : "string"
+    }
+  }, {
+    "includeCondition" : {
+      "type" : "equals",
+      "sourceMap" : {
+        "left" : {
+          "type" : "property",
+          "sourceMap" : {
+            "name" : {
+              "value" : "JOB_NAME",
+              "type" : "string"
+            },
+            "target" : {
+              "type" : "property",
+              "sourceMap" : {
+                "name" : {
+                  "value" : "vars",
+                  "type" : "string"
+                },
+                "target" : {
+                  "type" : "sysvar",
+                  "source" : {
+                    "value" : "env",
+                    "type" : "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "right" : {
+          "type" : "null"
+        }
+      }
+    },
+    "listId" : {
+      "value" : "project-vars-local",
+      "type" : "string"
+    }
+  } ],
+  "tags" : [ ]
+}

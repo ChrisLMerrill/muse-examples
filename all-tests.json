@@ -1,0 +1,5 @@
+{
+  "type" : "suite_of_ids",
+  "testIds" : [ "use-custom-javascript-step", "login-tests", "use-custom-java-step" ],
+  "tags" : [ ]
+}

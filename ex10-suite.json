@@ -1,6 +1,0 @@
-{
-  "type" : "parameterized_test_suite",
-  "dataTableId" : "ex10-params",
-  "testId" : "ex10-parameterized",
-  "tags" : [ ]
-}

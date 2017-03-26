@@ -1,21 +1,17 @@
 {
   "type" : "variables",
   "variables" : {
-    "browser-provider" : {
+    "provider" : {
       "type" : "resource",
       "source" : {
         "value" : "local-provider",
         "type" : "string"
       }
     },
-    "base-url" : {
-      "value" : "http://github.com",
-      "type" : "string"
-    },
     "browser" : {
       "type" : "resource",
       "source" : {
-        "value" : "firefox",
+        "value" : "phantomjs",
         "type" : "string"
       }
     }
