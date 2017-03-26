@@ -1,24 +1,7 @@
 {
   "type" : "steppedtest",
-  "defaultVariables" : {
-    "search1" : {
-      "value" : "selenium",
-      "type" : "string"
-    },
-    "search2" : {
-      "value" : "muse",
-      "type" : "string"
-    },
-    "search3" : {
-      "value" : "muse test framework",
-      "type" : "string"
-    }
-  },
   "step" : {
     "type" : "compound",
-    "metadata" : {
-      "description" : "Find the Muse site on GitHub and read the wiki"
-    },
     "children" : [ {
       "type" : "open-browser",
       "sources" : {
@@ -46,6 +29,18 @@
             "value" : "base-url",
             "type" : "string"
           }
+        }
+      }
+    }, {
+      "type" : "browser-size",
+      "sources" : {
+        "width" : {
+          "value" : 1500,
+          "type" : "integer"
+        },
+        "height" : {
+          "value" : 1200,
+          "type" : "integer"
         }
       }
     }, {
@@ -164,6 +159,24 @@
       "type" : "close-browser",
       "sources" : { }
     } ],
-    "sources" : { }
-  }
+    "sources" : { },
+    "metadata" : {
+      "description" : "Find the Muse site on GitHub and read the wiki"
+    }
+  },
+  "defaultVariables" : {
+    "search1" : {
+      "value" : "selenium",
+      "type" : "string"
+    },
+    "search2" : {
+      "value" : "muse",
+      "type" : "string"
+    },
+    "search3" : {
+      "value" : "muse test framework",
+      "type" : "string"
+    }
+  },
+  "tags" : [ ]
 }

@@ -4,6 +4,10 @@
     "link_to_click" : {
       "value" : "Ant",
       "type" : "string"
+    },
+    "expected_title" : {
+      "value" : "Apache Ant - Welcome",
+      "type" : "string"
     }
   },
   "step" : {
@@ -66,6 +70,25 @@
         }
       }
     }, {
+      "type" : "wait",
+      "sources" : {
+        "condition" : {
+          "type" : "equals",
+          "sourceMap" : {
+            "left" : {
+              "type" : "page-title"
+            },
+            "right" : {
+              "type" : "variable",
+              "source" : {
+                "value" : "expected_title",
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    }, {
       "type" : "verify",
       "sources" : {
         "condition" : {
@@ -75,8 +98,11 @@
               "type" : "page-title"
             },
             "right" : {
-              "value" : "Apache Ant - Welcome",
-              "type" : "string"
+              "type" : "variable",
+              "source" : {
+                "value" : "expected_title",
+                "type" : "string"
+              }
             }
           }
         }
@@ -86,5 +112,6 @@
       "sources" : { }
     } ],
     "sources" : { }
-  }
+  },
+  "tags" : [ ]
 }

@@ -2,9 +2,6 @@
   "type" : "steppedtest",
   "step" : {
     "type" : "scope",
-    "metadata" : {
-      "description" : null
-    },
     "children" : [ {
       "type" : "store-variable",
       "sources" : {
@@ -39,13 +36,17 @@
               }
             },
             "right" : {
-              "value" : 5,
+              "value" : 6,
               "type" : "integer"
             }
           }
         }
       }
-    } ]
+    } ],
+    "metadata" : {
+      "description" : null
+    }
   },
-  "defaultVariables" : { }
+  "defaultVariables" : { },
+  "tags" : [ ]
 }

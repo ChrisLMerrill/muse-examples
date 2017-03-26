@@ -1,5 +1,5 @@
 {
   "type" : "suite_of_ids",
-  "testIds" : [ "ex2-If-LessThan-LogMessage", "ex4-callMacro", "ex6-webdriver-github-search", "ex8-use-custom-step", "ex9-use-custom-javascript-step", "ex10-parameterized", "ex1-GetAndSetVariable-Verify-Equals", "ex3-Increment-While", "ex5-FunctionVariableScope", "ex7-webdriver-locator-reuse" ],
+  "testIds" : [ "ex2-If-LessThan-LogMessage", "ex4-callMacro", "ex6-webdriver-github-search", "ex8-use-custom-step", "ex9-use-custom-javascript-step", "ex1-GetAndSetVariable-Verify-Equals", "ex3-Increment-While", "ex5-FunctionVariableScope", "ex7-webdriver-locator-reuse", "ex10-suite" ],
   "tags" : [ ]
 }

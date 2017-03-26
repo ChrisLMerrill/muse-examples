@@ -2,7 +2,7 @@
   "type" : "webdriver-provider-list",
   "providers" : [ {
     "type" : "firefox-marionette-provider",
-    "absolutePath" : "D:\\Work\\MuseProject\\webdrivers\\marionette\\0.11.1\\geckodriver.exe",
+    "absolutePath" : "D:\\Work\\MuseProject\\webdrivers\\marionette\\0.15\\geckodriver.exe",
     "os" : "Windows"
   }, {
     "type" : "safaridriver-provider"
@@ -13,6 +13,10 @@
   }, {
     "type" : "iexploredriver-provider",
     "absolutePath" : "D:\\Work\\MuseProject\\webdrivers\\iedriver\\2.47\\IEDriverServer64.exe",
+    "os" : "Windows"
+  }, {
+    "type" : "phantomjs-provider",
+    "absolutePath" : "D:\\Work\\MuseProject\\webdrivers\\phantomjs\\2.1.1\\phantomjs.exe",
     "os" : "Windows"
   } ],
   "tags" : [ ]
