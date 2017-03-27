@@ -3,8 +3,8 @@
   "variables" : {
     "browser" : {
       "source" : {
-        "type" : "string",
-        "value" : "firefox"
+        "value" : "chrome",
+        "type" : "string"
       },
       "type" : "resource"
     }
