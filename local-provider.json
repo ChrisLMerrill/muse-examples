@@ -2,24 +2,28 @@
   "type" : "webdriver-provider-list",
   "providers" : [ {
     "type" : "firefox-marionette-provider",
-    "relativePath" : "webdrivers\\firefox\\0.15\\geckodriver.exe",
-    "os" : "Windows"
+    "os" : "Windows",
+    "relativePath" : "webdrivers\\firefox\\0.15\\geckodriver.exe"
   }, {
     "type" : "chromedriver-provider",
-    "relativePath" : "webdrivers\\chromedriver\\2.28\\chromedriver.exe",
-    "os" : "Windows"
+    "os" : "Windows",
+    "relativePath" : "webdrivers\\chromedriver\\2.28\\chromedriver.exe"
   }, {
     "type" : "phantomjs-provider",
-    "relativePath" : "webdrivers\\phantomjs\\2.1.1\\phantomjs.exe",
-    "os" : "Windows"
+    "os" : "Windows",
+    "relativePath" : "webdrivers\\phantomjs\\2.1.1\\phantomjs.exe"
   }, {
     "type" : "chromedriver-provider",
-    "relativePath" : "webdrivers\\chromedriver\\2.28\\chromedriver",
-    "os" : "macOS"
+    "os" : "macOS",
+    "relativePath" : "webdrivers\\chromedriver\\2.28\\chromedriver"
   }, {
     "type" : "firefox-marionette-provider",
-    "relativePath" : "webdrivers\\firefox\\0.15\\geckodriver",
-    "os" : "macOS"
+    "os" : "macOS",
+    "relativePath" : "webdrivers\\firefox\\0.15\\geckodriver"
+  }, {
+    "type" : "phantomjs-provider",
+    "os" : "macOS",
+    "relativePath" : "webdrivers\\phantomjs\\2.1.1\\phantomjs"
   } ],
   "tags" : [ ]
 }
