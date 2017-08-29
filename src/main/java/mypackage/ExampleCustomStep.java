@@ -1,4 +1,4 @@
-package org.musetest.examples;
+package mypackage;
 
 import org.musetest.core.*;
 import org.musetest.core.context.*;

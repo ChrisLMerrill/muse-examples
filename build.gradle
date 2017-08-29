@@ -20,3 +20,10 @@ task zip(type:Zip) {
     exclude '.*'
     into baseName + '-' + version
     }
+
+/* This comma-separated list determines which package(s) will be scanned for classes that implement Muse APIs */
+jar {
+    manifest {
+        attributes 'muse-package' : 'mypackage,other.package'
+    }
+}
