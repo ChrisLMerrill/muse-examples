@@ -2,7 +2,7 @@
   "type" : "selenium-capabilities",
   "capabilities" : {
     "browserName" : "firefox",
-    "version" : "",
+    "version" : "53",
     "platform" : "ANY"
   },
   "tags" : [ ]
