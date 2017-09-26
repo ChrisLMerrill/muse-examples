@@ -27,3 +27,8 @@ jar {
         attributes 'muse-package' : 'mypackage,other.package'
     }
 }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.2'
+}
+
