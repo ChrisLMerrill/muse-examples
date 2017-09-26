@@ -1,5 +1,5 @@
 {
-  "type" : "context-initializers",
+  "type" : "varlist-initializers",
   "variableListInitializers" : [ {
     "includeCondition" : {
       "value" : true,
