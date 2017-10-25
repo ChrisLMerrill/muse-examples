@@ -1,10 +1,13 @@
 {
   "type" : "steppedtest",
-  "defaultVariables" : { },
   "step" : {
     "type" : "compound",
     "children" : [ {
       "type" : "log-params",
+      "metadata" : {
+        "description" : null,
+        "id" : 21327083012113
+      },
       "sources" : {
         "abc" : {
           "value" : "aaa",
@@ -18,11 +21,15 @@
           "value" : true,
           "type" : "boolean"
         }
-      }
+      },
+      "stepId" : 21327083012113
     } ],
     "metadata" : {
-      "description" : null
-    }
+      "description" : null,
+      "id" : 21327083012112
+    },
+    "stepId" : 21327083012112
   },
+  "defaultVariables" : { },
   "tags" : [ ]
 }
