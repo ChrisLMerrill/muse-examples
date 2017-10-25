@@ -1,16 +1,60 @@
 {
-  "type" : "varlist-initializers",
-  "variableListInitializers" : [ {
-    "includeCondition" : {
-      "value" : true,
-      "type" : "boolean"
+  "type" : "context-initializers",
+  "applyToTestCondition" : {
+    "value" : true,
+    "type" : "boolean"
+  },
+  "initializers" : [ {
+    "parameters" : {
+      "listid" : {
+        "value" : "project-vars",
+        "type" : "string"
+      }
     },
-    "listId" : {
-      "value" : "project-vars",
-      "type" : "string"
+    "typeId" : "varlist",
+    "applyCondition" : {
+      "value" : true,
+      "type" : "boolean",
+      "sourceMap" : {
+        "left" : {
+          "type" : "property",
+          "sourceMap" : {
+            "name" : {
+              "value" : "JOB_NAME",
+              "type" : "string"
+            },
+            "target" : {
+              "type" : "property",
+              "sourceMap" : {
+                "name" : {
+                  "value" : "vars",
+                  "type" : "string"
+                },
+                "target" : {
+                  "type" : "sysvar",
+                  "source" : {
+                    "value" : "env",
+                    "type" : "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "right" : {
+          "type" : "null"
+        }
+      }
     }
   }, {
-    "includeCondition" : {
+    "parameters" : {
+      "listid" : {
+        "value" : "project-vars-local",
+        "type" : "string"
+      }
+    },
+    "typeId" : "varlist",
+    "applyCondition" : {
       "type" : "equals",
       "sourceMap" : {
         "left" : {
@@ -42,10 +86,6 @@
           "type" : "null"
         }
       }
-    },
-    "listId" : {
-      "value" : "project-vars-local",
-      "type" : "string"
     }
   } ],
   "tags" : [ ]
