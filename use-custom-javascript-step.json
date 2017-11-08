@@ -1,10 +1,12 @@
 {
   "type" : "steppedtest",
-  "defaultVariables" : { },
   "step" : {
     "type" : "compound",
     "children" : [ {
       "type" : "store-variable",
+      "metadata" : {
+        "id" : 92625388830742
+      },
       "sources" : {
         "name" : {
           "value" : "string1",
@@ -17,6 +19,9 @@
       }
     }, {
       "type" : "store-variable",
+      "metadata" : {
+        "id" : 92625388830747
+      },
       "sources" : {
         "name" : {
           "value" : "int1",
@@ -29,6 +34,9 @@
       }
     }, {
       "type" : "example-js-step",
+      "metadata" : {
+        "id" : 92625388830744
+      },
       "sources" : {
         "abc" : {
           "value" : "aaa",
@@ -41,6 +49,9 @@
       }
     }, {
       "type" : "verify",
+      "metadata" : {
+        "id" : 92625388830745
+      },
       "sources" : {
         "condition" : {
           "type" : "equals",
@@ -61,6 +72,9 @@
       }
     }, {
       "type" : "verify",
+      "metadata" : {
+        "id" : 92625388830746
+      },
       "sources" : {
         "condition" : {
           "type" : "equals",
@@ -80,10 +94,12 @@
         }
       }
     } ],
-    "sources" : { },
     "metadata" : {
-      "description" : null
-    }
+      "description" : null,
+      "id" : 92625388830741
+    },
+    "sources" : { }
   },
+  "defaultVariables" : { },
   "tags" : [ ]
 }
