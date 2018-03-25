@@ -3,80 +3,32 @@
   "step" : {
     "type" : "scope",
     "children" : [ {
-      "type" : "click-element",
-      "sources" : {
-        "element" : {
-          "type" : "element-linktext",
-          "source" : {
-            "value" : "Form Authentication",
-            "type" : "string"
-          }
-        }
-      },
-      "metadata" : {
-        "id" : 92625388830749
-      }
-    }, {
       "type" : "wait",
+      "metadata" : {
+        "_id" : 92625388830750
+      },
       "sources" : {
         "condition" : {
           "type" : "exists",
           "source" : {
-            "type" : "page-element",
-            "sourceMap" : {
-              "page" : {
-                "value" : "login-page",
-                "type" : "string"
-              },
-              "element" : {
-                "value" : "username",
-                "type" : "string"
-              }
-            }
-          }
-        }
-      },
-      "metadata" : {
-        "id" : 92625388830750
-      }
-    }, {
-      "type" : "send-keys",
-      "sources" : {
-        "keys" : {
-          "type" : "variable",
-          "source" : {
-            "value" : "username",
-            "type" : "string"
-          }
-        },
-        "clear" : {
-          "value" : true,
-          "type" : "boolean"
-        },
-        "element" : {
-          "type" : "page-element",
-          "sourceMap" : {
-            "page" : {
-              "value" : "login-page",
-              "type" : "string"
-            },
-            "element" : {
+            "type" : "element-id",
+            "source" : {
               "value" : "username",
               "type" : "string"
             }
           }
         }
-      },
-      "metadata" : {
-        "id" : 92625388830751
       }
     }, {
       "type" : "send-keys",
+      "metadata" : {
+        "_id" : 92625388830751
+      },
       "sources" : {
         "keys" : {
           "type" : "variable",
           "source" : {
-            "value" : "password",
+            "value" : "user",
             "type" : "string"
           }
         },
@@ -85,68 +37,102 @@
           "type" : "boolean"
         },
         "element" : {
-          "type" : "page-element",
+          "type" : "element-id",
+          "source" : {
+            "value" : "username",
+            "type" : "string"
+          },
           "sourceMap" : {
-            "page" : {
-              "value" : "login-page",
+            "element" : {
+              "value" : "UsernameField",
               "type" : "string"
             },
-            "element" : {
-              "value" : "password",
+            "page" : {
+              "value" : "LoginPage",
               "type" : "string"
             }
           }
         }
-      },
+      }
+    }, {
+      "type" : "send-keys",
       "metadata" : {
-        "id" : 92625388830752
+        "_id" : 92625388830752
+      },
+      "sources" : {
+        "keys" : {
+          "type" : "variable",
+          "source" : {
+            "value" : "pass",
+            "type" : "string"
+          }
+        },
+        "clear" : {
+          "value" : true,
+          "type" : "boolean"
+        },
+        "element" : {
+          "type" : "element-id",
+          "source" : {
+            "value" : "password",
+            "type" : "string"
+          },
+          "sourceMap" : {
+            "page" : {
+              "value" : "LoginPage",
+              "type" : "string"
+            },
+            "element" : {
+              "value" : "PasswordField",
+              "type" : "string"
+            }
+          }
+        }
       }
     }, {
       "type" : "submit-element",
+      "metadata" : {
+        "_id" : 92625388830753
+      },
       "sources" : {
         "element" : {
-          "type" : "page-element",
+          "type" : "element-id",
+          "source" : {
+            "value" : "login",
+            "type" : "string"
+          },
           "sourceMap" : {
             "page" : {
-              "value" : "login-page",
+              "value" : "LoginPage",
               "type" : "string"
             },
             "element" : {
-              "value" : "login-form",
+              "value" : "LoginForm",
               "type" : "string"
             }
           }
         }
-      },
-      "metadata" : {
-        "id" : 92625388830753
       }
     }, {
       "type" : "wait",
+      "metadata" : {
+        "_id" : 92625388830754
+      },
       "sources" : {
         "condition" : {
           "type" : "exists",
           "source" : {
-            "type" : "page-element",
-            "sourceMap" : {
-              "page" : {
-                "value" : "login-page",
-                "type" : "string"
-              },
-              "element" : {
-                "value" : "content-section",
-                "type" : "string"
-              }
+            "type" : "element-id",
+            "source" : {
+              "value" : "content",
+              "type" : "string"
             }
           }
         }
-      },
-      "metadata" : {
-        "id" : 92625388830754
       }
     } ],
     "metadata" : {
-      "id" : 92625388830748
+      "_id" : 92625388830748
     }
   },
   "tags" : [ ]

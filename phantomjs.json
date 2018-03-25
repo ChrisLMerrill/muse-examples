@@ -1,9 +1,0 @@
-{
-  "type" : "selenium-capabilities",
-  "capabilities" : {
-    "browserName" : "phantomjs",
-    "version" : "ANY",
-    "platform" : "ANY"
-  },
-  "tags" : [ ]
-}

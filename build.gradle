@@ -1,6 +1,6 @@
 apply plugin: 'java'
 
-version 0.10
+version 0.12
 
 repositories
     {
@@ -10,14 +10,15 @@ repositories
 
 dependencies
     {
-    compile('org.musetest:muse-core:0.10+')
+    compile('org.musetest:muse-core:0.12+')
     }
 
 /* For creating the examples zip file */
 task zip(type:Zip) {
     from projectDir
     exclude 'build/**'
-    exclude '.*'
+    exclude '.gradle'
+    exclude '.idea'
     into baseName + '-' + version
     }
 

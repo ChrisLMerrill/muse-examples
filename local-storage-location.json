@@ -1,0 +1,46 @@
+{
+  "type" : "local-storage-location",
+  "parameters" : {
+    "apply-condition" : {
+      "value" : true,
+      "type" : "boolean"
+    },
+    "auto-apply" : {
+      "value" : false,
+      "type" : "boolean"
+    },
+    "base-param" : {
+      "type" : "add",
+      "sourceMap" : {
+        "name" : {
+          "value" : "output_path",
+          "type" : "string"
+        },
+        "target" : {
+          "type" : "sysvar",
+          "source" : {
+            "value" : "clo",
+            "type" : "string"
+          }
+        }
+      },
+      "sourceList" : [ {
+        "type" : "variable",
+        "source" : {
+          "value" : "output_path",
+          "type" : "string"
+        }
+      }, {
+        "value" : "/",
+        "type" : "string"
+      }, {
+        "type" : "sysvar",
+        "source" : {
+          "value" : "ExecutionId",
+          "type" : "string"
+        }
+      } ]
+    }
+  },
+  "tags" : [ ]
+}

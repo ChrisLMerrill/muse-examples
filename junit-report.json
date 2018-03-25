@@ -1,0 +1,14 @@
+{
+  "type" : "junit-report-plugin",
+  "parameters" : {
+    "apply-condition" : {
+      "value" : true,
+      "type" : "boolean"
+    },
+    "auto-apply" : {
+      "value" : false,
+      "type" : "boolean"
+    }
+  },
+  "tags" : [ ]
+}

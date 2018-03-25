@@ -6,7 +6,6 @@ import org.musetest.core.events.*;
 import org.musetest.core.resource.*;
 import org.musetest.core.step.*;
 import org.musetest.core.step.descriptor.*;
-import org.musetest.core.steptest.*;
 import org.musetest.core.values.*;
 
 import java.util.*;
@@ -24,7 +23,7 @@ import java.util.*;
 @SuppressWarnings("unused")  // called reflectively by tests in the project
 public class ExampleCustomStep extends BaseStep
     {
-    public ExampleCustomStep(StepConfiguration config, MuseProject project) throws StepConfigurationError
+    public ExampleCustomStep(StepConfiguration config, MuseProject project)
         {
         super(config);
         _project = project;
@@ -39,7 +38,7 @@ public class ExampleCustomStep extends BaseStep
         	ValueSourceConfiguration config = sources.get(name);
         	MuseValueSource source = config.createSource(_project); 
         	Object value = getValue(source, context, true, Object.class);
-        	context.raiseEvent(new MessageEvent(name + "=" + value));
+        	context.raiseEvent(MessageEventType.create(name + "=" + value));
         	}
         return new BasicStepExecutionResult(StepExecutionStatus.COMPLETE);
         }

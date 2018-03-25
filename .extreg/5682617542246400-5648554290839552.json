@@ -1,0 +1,40 @@
+{
+  "log" : {
+    "installedFilePaths" : [ "lib\\pageobjects-0.1.jar", "lib\\pageobjects-ui-0.1.jar" ],
+    "numberFilesInstalled" : 2,
+    "numberActionFailures" : 0,
+    "registryUpdated" : false,
+    "registryUpdateMessage" : null,
+    "entry" : null
+  },
+  "info" : {
+    "versionDescription" : "Tools for building Selenium tests using the Page Objects pattern",
+    "extensionAuthor" : "Web Performance",
+    "extensionDesc" : "Tools for building tests using the PageObjects pattern.",
+    "extensionName" : "Page Objects",
+    "versionId" : 5648554290839552,
+    "extensionId" : 5682617542246400,
+    "authorUrl" : "https://www.webperformance.com/",
+    "versionDate" : null,
+    "assets" : [ {
+      "url" : "https://museide.s3.amazonaws.com/extensions/pageobjects/pageobjects-0.1.jar",
+      "installInstructions" : [ {
+        "actionName" : "Download",
+        "parameters" : null
+      } ],
+      "stringContent" : null,
+      "defaultPath" : "lib/pageobjects-0.1.jar",
+      "content" : null
+    }, {
+      "url" : "https://museide.s3.amazonaws.com/extensions/pageobjects/pageobjects-ui-0.1.jar",
+      "installInstructions" : [ {
+        "actionName" : "Download",
+        "parameters" : null
+      } ],
+      "stringContent" : null,
+      "defaultPath" : "lib/pageobjects-ui-0.1.jar",
+      "content" : null
+    } ],
+    "versionName" : "0.1"
+  }
+}

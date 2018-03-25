@@ -1,258 +1,272 @@
 {
   "type" : "steppedtest",
   "step" : {
-    "type" : "compound",
     "children" : [ {
-      "type" : "open-browser",
-      "metadata" : {
-        "id" : 92625388830721
-      },
       "sources" : {
         "provider" : {
-          "type" : "variable",
           "source" : {
-            "value" : "provider",
-            "type" : "string"
-          }
+            "type" : "string",
+            "value" : "provider"
+          },
+          "type" : "variable"
         },
         "browser" : {
-          "type" : "variable",
           "source" : {
-            "value" : "browser",
-            "type" : "string"
-          }
+            "type" : "string",
+            "value" : "browser"
+          },
+          "type" : "variable"
         }
+      },
+      "type" : "open-browser",
+      "metadata" : {
+        "_id" : 92625388830721
       }
     }, {
-      "type" : "goto-url",
-      "metadata" : {
-        "id" : 92625388830722
-      },
       "sources" : {
         "URL" : {
-          "value" : "https://the-internet.herokuapp.com/",
-          "type" : "string"
+          "type" : "string",
+          "value" : "https://the-internet.herokuapp.com/"
         }
+      },
+      "type" : "goto-url",
+      "metadata" : {
+        "_id" : 92625388830722
       }
     }, {
-      "type" : "callfunction",
-      "metadata" : {
-        "id" : 92625388830723
+      "sources" : {
+        "element" : {
+          "source" : {
+            "type" : "string",
+            "value" : "Form Authentication"
+          },
+          "type" : "element-linktext"
+        }
       },
+      "type" : "click-element",
+      "metadata" : {
+        "_id" : 92625388830822
+      }
+    }, {
       "sources" : {
         "id" : {
-          "value" : "form-login",
-          "type" : "string"
+          "type" : "string",
+          "value" : "form-login"
+        },
+        "user" : {
+          "source" : {
+            "type" : "string",
+            "value" : "username"
+          },
+          "type" : "variable"
+        },
+        "pass" : {
+          "source" : {
+            "type" : "string",
+            "value" : "password"
+          },
+          "type" : "variable"
         }
+      },
+      "type" : "callfunction",
+      "metadata" : {
+        "_id" : 92625388830723
       }
     }, {
-      "type" : "verify",
-      "metadata" : {
-        "id" : 92625388830724
-      },
       "sources" : {
         "condition" : {
           "type" : "has-class",
           "sourceMap" : {
             "target" : {
-              "type" : "element-text",
               "source" : {
                 "type" : "page-element",
                 "sourceMap" : {
                   "page" : {
-                    "value" : "login-page",
-                    "type" : "string"
+                    "type" : "string",
+                    "value" : "login-page"
                   },
                   "element" : {
-                    "value" : "message-bar",
-                    "type" : "string"
+                    "type" : "string",
+                    "value" : "message-bar"
                   }
                 }
-              }
+              },
+              "type" : "element-text"
             },
             "pattern" : {
               "type" : "add",
               "sourceList" : [ {
-                "value" : ".*",
-                "type" : "string"
+                "type" : "string",
+                "value" : ".*"
               }, {
-                "type" : "variable",
                 "source" : {
-                  "value" : "message",
-                  "type" : "string"
-                }
+                  "type" : "string",
+                  "value" : "message"
+                },
+                "type" : "variable"
               }, {
-                "value" : "[\\s\\S]*",
-                "type" : "string"
+                "type" : "string",
+                "value" : "[\\s\\S]*"
               } ]
             },
             "class" : {
-              "type" : "variable",
               "source" : {
-                "value" : "class",
-                "type" : "string"
-              }
+                "type" : "string",
+                "value" : "class"
+              },
+              "type" : "variable"
             },
             "element" : {
-              "type" : "page-element",
-              "sourceMap" : {
-                "page" : {
-                  "value" : "login-page",
-                  "type" : "string"
-                },
-                "element" : {
-                  "value" : "message-bar",
-                  "type" : "string"
-                }
-              }
+              "source" : {
+                "type" : "string",
+                "value" : "flash"
+              },
+              "type" : "element-id"
             }
           }
         }
+      },
+      "type" : "verify",
+      "metadata" : {
+        "_id" : 92625388830724
       }
     }, {
-      "type" : "if",
       "children" : [ {
-        "type" : "click-element",
-        "metadata" : {
-          "id" : 92625388830726
-        },
         "sources" : {
           "element" : {
-            "type" : "page-element",
+            "source" : {
+              "type" : "string",
+              "value" : ".icon-signout"
+            },
+            "type" : "css-selector",
             "sourceMap" : {
               "page" : {
-                "value" : "login-page",
-                "type" : "string"
+                "type" : "string",
+                "value" : "LoginPage"
               },
               "element" : {
-                "value" : "logout-button",
-                "type" : "string"
+                "type" : "string",
+                "value" : "LogoutButton"
               }
             }
           }
+        },
+        "type" : "click-element",
+        "metadata" : {
+          "_id" : 92625388830726
         }
       }, {
-        "type" : "wait",
-        "metadata" : {
-          "id" : 92625388830727
-        },
         "sources" : {
           "condition" : {
-            "type" : "exists",
             "source" : {
-              "type" : "element-id",
               "source" : {
-                "value" : "content",
-                "type" : "string"
-              }
-            }
+                "type" : "string",
+                "value" : "content"
+              },
+              "type" : "element-id"
+            },
+            "type" : "exists"
           }
+        },
+        "type" : "wait",
+        "metadata" : {
+          "_id" : 92625388830727
         }
       }, {
-        "type" : "verify",
-        "metadata" : {
-          "id" : 92625388830728
-        },
         "sources" : {
           "condition" : {
             "type" : "has-class",
             "sourceMap" : {
               "target" : {
-                "type" : "element-text",
                 "source" : {
                   "type" : "page-element",
                   "sourceMap" : {
                     "page" : {
-                      "value" : "login-page",
-                      "type" : "string"
+                      "type" : "string",
+                      "value" : "login-page"
                     },
                     "element" : {
-                      "value" : "message-bar",
-                      "type" : "string"
+                      "type" : "string",
+                      "value" : "message-bar"
                     }
                   }
-                }
+                },
+                "type" : "element-text"
               },
               "pattern" : {
                 "type" : "add",
                 "sourceList" : [ {
-                  "value" : ".*",
-                  "type" : "string"
+                  "type" : "string",
+                  "value" : ".*"
                 }, {
-                  "type" : "variable",
                   "source" : {
-                    "value" : "message",
-                    "type" : "string"
-                  }
+                    "type" : "string",
+                    "value" : "message"
+                  },
+                  "type" : "variable"
                 }, {
-                  "value" : "[\\s\\S]*",
-                  "type" : "string"
+                  "type" : "string",
+                  "value" : "[\\s\\S]*"
                 } ]
               },
-              "element" : {
-                "type" : "page-element",
-                "sourceMap" : {
-                  "page" : {
-                    "value" : "login-page",
-                    "type" : "string"
-                  },
-                  "element" : {
-                    "value" : "message-bar",
-                    "type" : "string"
-                  }
-                }
-              },
               "class" : {
-                "value" : "success",
-                "type" : "string"
+                "type" : "string",
+                "value" : "success"
+              },
+              "element" : {
+                "source" : {
+                  "type" : "string",
+                  "value" : "flash"
+                },
+                "type" : "element-id"
               }
             }
           }
+        },
+        "type" : "verify",
+        "metadata" : {
+          "_id" : 92625388830728
         }
       } ],
-      "metadata" : {
-        "id" : 92625388830725
-      },
       "sources" : {
         "condition" : {
-          "type" : "exists",
           "source" : {
-            "type" : "page-element",
-            "sourceMap" : {
-              "page" : {
-                "value" : "login-page",
-                "type" : "string"
-              },
-              "element" : {
-                "value" : "logout-button",
-                "type" : "string"
-              }
-            }
-          }
+            "source" : {
+              "type" : "string",
+              "value" : ".icon-signout"
+            },
+            "type" : "css-selector"
+          },
+          "type" : "exists"
         }
+      },
+      "type" : "if",
+      "metadata" : {
+        "_id" : 92625388830725
       }
     }, {
       "type" : "close-browser",
       "metadata" : {
-        "id" : 92625388830729
+        "_id" : 92625388830729
       }
     } ],
+    "type" : "compound",
     "metadata" : {
-      "id" : 92625388830720
+      "_id" : 92625388830720
     }
   },
   "defaultVariables" : {
     "username" : {
-      "value" : "tomsmith",
-      "type" : "string"
+      "type" : "string",
+      "value" : "tomsmith"
     },
     "password" : {
-      "value" : "SuperSecretPassword!",
-      "type" : "string"
+      "type" : "string",
+      "value" : "SuperSecretPassword!"
     },
     "class" : {
-      "value" : "success",
-      "type" : "string"
+      "type" : "string",
+      "value" : "success"
     }
   },
   "tags" : [ ]

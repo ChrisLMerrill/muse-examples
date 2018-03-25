@@ -1,0 +1,39 @@
+{
+  "type" : "compound-plugin",
+  "parameters" : {
+    "apply-condition" : {
+      "value" : true,
+      "type" : "boolean"
+    },
+    "lists" : {
+      "type" : "list",
+      "sourceList" : [ {
+        "value" : "event-logger",
+        "type" : "string"
+      }, {
+        "value" : "init-project-vars",
+        "type" : "string"
+      }, {
+        "value" : "init-project-vars-local",
+        "type" : "string"
+      }, {
+        "value" : "test-defaults-initializer",
+        "type" : "string"
+      }, {
+        "value" : "test-results-saver",
+        "type" : "string"
+      }, {
+        "value" : "test-result-calculator",
+        "type" : "string"
+      }, {
+        "value" : "local-storage-location",
+        "type" : "string"
+      } ]
+    },
+    "auto-apply" : {
+      "value" : true,
+      "type" : "boolean"
+    }
+  },
+  "tags" : [ ]
+}

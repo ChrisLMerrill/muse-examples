@@ -1,0 +1,165 @@
+{
+  "type" : "page",
+  "actions" : {
+    "Login" : {
+      "function" : "form-login-using-POs",
+      "exposedParameters" : [ ]
+    }
+  },
+  "elements" : {
+    "UsernameField" : {
+      "locator" : {
+        "type" : "element-id",
+        "source" : {
+          "value" : "username",
+          "type" : "string"
+        }
+      }
+    },
+    "LoginForm" : {
+      "locator" : {
+        "type" : "element-id",
+        "source" : {
+          "value" : "login",
+          "type" : "string"
+        }
+      }
+    },
+    "LogoutButton" : {
+      "locator" : {
+        "type" : "css-selector",
+        "source" : {
+          "value" : ".icon-signout",
+          "type" : "string"
+        }
+      }
+    },
+    "MessageBar" : {
+      "locator" : {
+        "type" : "element-id",
+        "source" : {
+          "value" : "flash",
+          "type" : "string"
+        }
+      }
+    },
+    "ContentSection" : {
+      "locator" : {
+        "type" : "element-id",
+        "source" : {
+          "value" : "content",
+          "type" : "string"
+        }
+      }
+    },
+    "LoginButton" : {
+      "locator" : {
+        "type" : "css-selector",
+        "source" : {
+          "value" : ".fa-sign-in",
+          "type" : "string"
+        }
+      }
+    },
+    "PasswordField" : {
+      "locator" : {
+        "type" : "element-id",
+        "source" : {
+          "value" : "password",
+          "type" : "string"
+        }
+      }
+    }
+  },
+  "conditions" : {
+    "ContentSectionExists" : {
+      "condition" : {
+        "type" : "exists",
+        "source" : {
+          "type" : "page-element",
+          "sourceMap" : {
+            "page" : {
+              "value" : "LoginPage",
+              "type" : "string"
+            },
+            "element" : {
+              "value" : "ContentSection",
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "UsernameFieldExists" : {
+      "condition" : {
+        "type" : "exists",
+        "source" : {
+          "type" : "page-element",
+          "sourceMap" : {
+            "page" : {
+              "value" : "LoginPage",
+              "type" : "string"
+            },
+            "element" : {
+              "value" : "UsernameField",
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "SuccessIsShown" : {
+      "condition" : {
+        "type" : "has-class",
+        "sourceMap" : {
+          "class" : {
+            "value" : "success",
+            "type" : "string"
+          },
+          "element" : {
+            "type" : "page-element",
+            "sourceMap" : {
+              "page" : {
+                "value" : "LoginPage",
+                "type" : "string"
+              },
+              "element" : {
+                "value" : "MessageBar",
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "LogoutButtonExists" : {
+      "condition" : {
+        "type" : "exists",
+        "source" : {
+          "type" : "page-element",
+          "sourceMap" : {
+            "page" : {
+              "value" : "LoginPage",
+              "type" : "string"
+            },
+            "element" : {
+              "value" : "LogoutButton",
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "parameters" : {
+    "url" : {
+      "value" : "https://the-internet.herokuapp.com/login",
+      "type" : "string"
+    }
+  },
+  "metadata" : {
+    "page-name" : "Login Page",
+    "_pagename" : "Login Page"
+  },
+  "tags" : [ ]
+}

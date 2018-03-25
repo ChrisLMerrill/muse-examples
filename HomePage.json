@@ -1,0 +1,24 @@
+{
+  "type" : "page",
+  "elements" : {
+    "LoginPageLink" : {
+      "locator" : {
+        "type" : "element-linktext",
+        "source" : {
+          "value" : "Form Authentication",
+          "type" : "string"
+        }
+      }
+    }
+  },
+  "parameters" : {
+    "url" : {
+      "value" : "https://the-internet.herokuapp.com/",
+      "type" : "string"
+    }
+  },
+  "metadata" : {
+    "_pagename" : "Home Page"
+  },
+  "tags" : [ ]
+}

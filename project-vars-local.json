@@ -2,11 +2,15 @@
   "type" : "variables",
   "variables" : {
     "browser" : {
+      "type" : "resource",
       "source" : {
-        "value" : "chrome",
+        "value" : "firefox",
         "type" : "string"
-      },
-      "type" : "resource"
+      }
+    },
+    "output_path" : {
+      "value" : "C:\\\\Temp\\\\muse-output",
+      "type" : "string"
     }
   },
   "tags" : [ ]

@@ -5,7 +5,7 @@
     "children" : [ {
       "type" : "open-browser",
       "metadata" : {
-        "id" : 92625388830732
+        "_id" : 92625388830732
       },
       "sources" : {
         "provider" : {
@@ -26,7 +26,7 @@
     }, {
       "type" : "goto-url",
       "metadata" : {
-        "id" : 92625388830733
+        "_id" : 92625388830733
       },
       "sources" : {
         "URL" : {
@@ -37,18 +37,32 @@
     }, {
       "type" : "callfunction",
       "metadata" : {
-        "id" : 92625388830734
+        "_id" : 92625388830734
       },
       "sources" : {
         "id" : {
           "value" : "form-login",
           "type" : "string"
+        },
+        "user" : {
+          "type" : "variable",
+          "source" : {
+            "value" : "username",
+            "type" : "string"
+          }
+        },
+        "pass" : {
+          "type" : "variable",
+          "source" : {
+            "value" : "password",
+            "type" : "string"
+          }
         }
       }
     }, {
       "type" : "verify",
       "metadata" : {
-        "id" : 92625388830735
+        "_id" : 92625388830735
       },
       "sources" : {
         "condition" : {
@@ -91,11 +105,11 @@
     }, {
       "type" : "close-browser",
       "metadata" : {
-        "id" : 92625388830736
+        "_id" : 92625388830736
       }
     } ],
     "metadata" : {
-      "id" : 92625388830731
+      "_id" : 92625388830731
     }
   },
   "defaultVariables" : {

@@ -1,0 +1,145 @@
+{
+  "type" : "function",
+  "step" : {
+    "type" : "scope",
+    "children" : [ {
+      "type" : "on-page",
+      "children" : [ {
+        "type" : "wait",
+        "metadata" : {
+          "_id" : 92625388830750
+        },
+        "sources" : {
+          "condition" : {
+            "type" : "page-condition",
+            "sourceMap" : {
+              "condition" : {
+                "value" : "UsernameFieldExists",
+                "type" : "string"
+              },
+              "page" : {
+                "value" : "LoginPage",
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }, {
+        "type" : "send-keys",
+        "metadata" : {
+          "_id" : 92625388830751
+        },
+        "sources" : {
+          "keys" : {
+            "type" : "variable",
+            "source" : {
+              "value" : "user",
+              "type" : "string"
+            }
+          },
+          "clear" : {
+            "value" : true,
+            "type" : "boolean"
+          },
+          "element" : {
+            "type" : "page-element",
+            "sourceMap" : {
+              "page" : {
+                "value" : "LoginPage",
+                "type" : "string"
+              },
+              "element" : {
+                "value" : "UsernameField",
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }, {
+        "type" : "send-keys",
+        "metadata" : {
+          "_id" : 92625388830752
+        },
+        "sources" : {
+          "keys" : {
+            "type" : "variable",
+            "source" : {
+              "value" : "pass",
+              "type" : "string"
+            }
+          },
+          "clear" : {
+            "value" : true,
+            "type" : "boolean"
+          },
+          "element" : {
+            "type" : "page-element",
+            "sourceMap" : {
+              "page" : {
+                "value" : "LoginPage",
+                "type" : "string"
+              },
+              "element" : {
+                "value" : "PasswordField",
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }, {
+        "type" : "submit-element",
+        "metadata" : {
+          "_id" : 92625388830753
+        },
+        "sources" : {
+          "element" : {
+            "type" : "page-element",
+            "sourceMap" : {
+              "page" : {
+                "value" : "LoginPage",
+                "type" : "string"
+              },
+              "element" : {
+                "value" : "LoginForm",
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }, {
+        "type" : "wait",
+        "metadata" : {
+          "_id" : 92625388830754
+        },
+        "sources" : {
+          "condition" : {
+            "type" : "page-condition",
+            "sourceMap" : {
+              "condition" : {
+                "value" : "ContentSectionExists",
+                "type" : "string"
+              },
+              "page" : {
+                "value" : "LoginPage",
+                "type" : "string"
+              }
+            }
+          }
+        }
+      } ],
+      "metadata" : {
+        "_id" : 92625388830824
+      },
+      "sources" : {
+        "pageid" : {
+          "value" : "LoginPage",
+          "type" : "string"
+        }
+      }
+    } ],
+    "metadata" : {
+      "_id" : 92625388830748
+    }
+  },
+  "tags" : [ ]
+}

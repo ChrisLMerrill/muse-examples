@@ -1,0 +1,48 @@
+{
+  "type" : "variable-list-initializer",
+  "parameters" : {
+    "listid" : {
+      "value" : "project-vars",
+      "type" : "string"
+    },
+    "apply-condition" : {
+      "value" : true,
+      "type" : "boolean",
+      "sourceMap" : {
+        "left" : {
+          "type" : "property",
+          "sourceMap" : {
+            "name" : {
+              "value" : "JOB_NAME",
+              "type" : "string"
+            },
+            "target" : {
+              "type" : "property",
+              "sourceMap" : {
+                "name" : {
+                  "value" : "vars",
+                  "type" : "string"
+                },
+                "target" : {
+                  "type" : "sysvar",
+                  "source" : {
+                    "value" : "env",
+                    "type" : "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "right" : {
+          "type" : "null"
+        }
+      }
+    },
+    "auto-apply" : {
+      "value" : false,
+      "type" : "boolean"
+    }
+  },
+  "tags" : [ ]
+}

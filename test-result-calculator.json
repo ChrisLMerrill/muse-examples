@@ -1,0 +1,16 @@
+{
+  "type" : "test-result-collector",
+  "parameters" : {
+    "apply-condition" : {
+      "value" : true,
+      "type" : "boolean",
+      "sourceList" : [ ]
+    },
+    "auto-apply" : {
+      "value" : false,
+      "type" : "boolean",
+      "sourceList" : [ ]
+    }
+  },
+  "tags" : [ ]
+}

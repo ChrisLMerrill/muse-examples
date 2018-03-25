@@ -1,0 +1,54 @@
+{
+  "info" : {
+    "extensionId" : 5715999101812736,
+    "extensionName" : "ChromeDriver",
+    "authorUrl" : "https://github.com/ChrisLMerrill",
+    "assets" : [ {
+      "content" : null,
+      "url" : "https://chromedriver.storage.googleapis.com/2.37/chromedriver_win32.zip",
+      "stringContent" : null,
+      "defaultPath" : "webdrivers/chromedriver/2.37/chromedriver_win32.zip",
+      "installInstructions" : [ {
+        "parameters" : null,
+        "actionName" : "Download"
+      }, {
+        "parameters" : null,
+        "actionName" : "UnzipAll"
+      }, {
+        "parameters" : null,
+        "actionName" : "DeleteFile"
+      } ]
+    }, {
+      "content" : null,
+      "url" : "https://chromedriver.storage.googleapis.com/2.37/chromedriver_mac64.zip",
+      "stringContent" : null,
+      "defaultPath" : "webdrivers/chromedriver/2.37/chromedriver_mac64.zip",
+      "installInstructions" : [ {
+        "parameters" : null,
+        "actionName" : "Download"
+      }, {
+        "parameters" : {
+          "filename" : "chromedriver_mac64"
+        },
+        "actionName" : "UnzipOneAs"
+      }, {
+        "parameters" : null,
+        "actionName" : "DeleteFile"
+      } ]
+    } ],
+    "versionId" : 5651124426113024,
+    "versionName" : "2.37",
+    "extensionDesc" : "ChromeDriver is an executable used by WebDriver to control the Google Chrome browser.",
+    "versionDate" : null,
+    "versionDescription" : "Supports Chrome 64-66",
+    "extensionAuthor" : "Chris Merrill"
+  },
+  "log" : {
+    "entry" : null,
+    "numberFilesInstalled" : 3,
+    "registryUpdated" : false,
+    "registryUpdateMessage" : null,
+    "numberActionFailures" : 0,
+    "installedFilePaths" : [ "webdrivers\\chromedriver\\2.37", "webdrivers\\chromedriver\\2.37\\chromedriver.exe", "webdrivers\\chromedriver\\2.37\\chromedriver_mac64" ]
+  }
+}

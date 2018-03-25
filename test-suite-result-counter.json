@@ -1,0 +1,16 @@
+{
+  "type" : "test-suite-result-counter",
+  "parameters" : {
+    "apply-condition" : {
+      "value" : true,
+      "type" : "boolean",
+      "sourceList" : [ ]
+    },
+    "auto-apply" : {
+      "value" : true,
+      "type" : "boolean",
+      "sourceList" : [ ]
+    }
+  },
+  "tags" : [ ]
+}

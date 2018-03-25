@@ -1,0 +1,10 @@
+{
+  "type" : "parallel-test-suite-runner",
+  "parameters" : {
+    "max-concurrency" : {
+      "value" : 3,
+      "type" : "integer"
+    }
+  },
+  "tags" : [ ]
+}

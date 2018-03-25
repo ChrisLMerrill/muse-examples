@@ -1,0 +1,9 @@
+{
+  "type" : "selenium-capabilities",
+  "capabilities" : {
+    "browserName" : "MicrosoftEdge",
+    "version" : "ANY",
+    "platform" : "WINDOWS"
+  },
+  "tags" : [ ]
+}

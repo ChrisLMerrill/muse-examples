@@ -1,0 +1,221 @@
+{
+  "type" : "steppedtest",
+  "step" : {
+    "children" : [ {
+      "sources" : {
+        "provider" : {
+          "source" : {
+            "type" : "string",
+            "value" : "provider"
+          },
+          "type" : "variable"
+        },
+        "browser" : {
+          "source" : {
+            "type" : "string",
+            "value" : "browser"
+          },
+          "type" : "variable"
+        }
+      },
+      "type" : "open-browser",
+      "metadata" : {
+        "_id" : 92625388830802
+      }
+    }, {
+      "children" : [ {
+        "sources" : {
+          "element" : {
+            "type" : "page-element",
+            "sourceMap" : {
+              "element" : {
+                "type" : "string",
+                "value" : "LoginPageLink"
+              },
+              "page" : {
+                "type" : "string",
+                "value" : "HomePage"
+              }
+            }
+          }
+        },
+        "type" : "click-element",
+        "metadata" : {
+          "_id" : 92625388830812
+        }
+      } ],
+      "sources" : {
+        "pageid" : {
+          "type" : "string",
+          "value" : "HomePage"
+        }
+      },
+      "type" : "start-at-page",
+      "metadata" : {
+        "_id" : 92625388830805
+      }
+    }, {
+      "children" : [ {
+        "sources" : {
+          "actionid" : {
+            "type" : "string",
+            "value" : "Login"
+          },
+          "pageid" : {
+            "type" : "string",
+            "value" : "LoginPage"
+          },
+          "user" : {
+            "source" : {
+              "type" : "string",
+              "value" : "username"
+            },
+            "type" : "variable"
+          },
+          "pass" : {
+            "source" : {
+              "type" : "string",
+              "value" : "password"
+            },
+            "type" : "variable"
+          }
+        },
+        "type" : "perform-action",
+        "metadata" : {
+          "_id" : 92625388830823
+        }
+      }, {
+        "sources" : {
+          "condition" : {
+            "type" : "page-condition",
+            "sourceMap" : {
+              "condition" : {
+                "type" : "string",
+                "value" : "SuccessIsShown"
+              },
+              "page" : {
+                "type" : "string",
+                "value" : "LoginPage"
+              }
+            }
+          }
+        },
+        "type" : "verify",
+        "metadata" : {
+          "_id" : 92625388830825
+        }
+      }, {
+        "children" : [ {
+          "sources" : {
+            "element" : {
+              "type" : "page-element",
+              "sourceMap" : {
+                "page" : {
+                  "type" : "string",
+                  "value" : "LoginPage"
+                },
+                "element" : {
+                  "type" : "string",
+                  "value" : "LogoutButton"
+                }
+              }
+            }
+          },
+          "type" : "click-element",
+          "metadata" : {
+            "_id" : 92625388830726
+          }
+        }, {
+          "sources" : {
+            "condition" : {
+              "type" : "page-condition",
+              "sourceMap" : {
+                "condition" : {
+                  "type" : "string",
+                  "value" : "ContentSectionExists"
+                },
+                "page" : {
+                  "type" : "string",
+                  "value" : "LoginPage"
+                }
+              }
+            }
+          },
+          "type" : "wait",
+          "metadata" : {
+            "_id" : 92625388830727
+          }
+        }, {
+          "sources" : {
+            "condition" : {
+              "type" : "page-condition",
+              "sourceMap" : {
+                "condition" : {
+                  "type" : "string",
+                  "value" : "SuccessIsShown"
+                },
+                "page" : {
+                  "type" : "string",
+                  "value" : "LoginPage"
+                }
+              }
+            }
+          },
+          "type" : "verify",
+          "metadata" : {
+            "_id" : 92625388830728
+          }
+        } ],
+        "sources" : {
+          "condition" : {
+            "type" : "page-condition",
+            "sourceMap" : {
+              "condition" : {
+                "type" : "string",
+                "value" : "LogoutButtonExists"
+              },
+              "page" : {
+                "type" : "string",
+                "value" : "LoginPage"
+              }
+            }
+          }
+        },
+        "type" : "if",
+        "metadata" : {
+          "_id" : 92625388830827
+        }
+      } ],
+      "sources" : {
+        "pageid" : {
+          "type" : "string",
+          "value" : "LoginPage"
+        }
+      },
+      "type" : "on-page",
+      "metadata" : {
+        "_id" : 92625388830818
+      }
+    }, {
+      "type" : "close-browser",
+      "metadata" : {
+        "_id" : 92625388830831
+      }
+    } ],
+    "type" : "scope",
+    "metadata" : {
+      "_id" : 92625388830803
+    }
+  },
+  "defaultVariables" : {
+    "username" : {
+      "type" : "string",
+      "value" : "tomsmith"
+    },
+    "password" : {
+      "type" : "string",
+      "value" : "SuperSecretPassword!"
+    }
+  },
+  "tags" : [ ]
+}

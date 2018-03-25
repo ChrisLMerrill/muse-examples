@@ -1,0 +1,31 @@
+{
+  "info" : {
+    "extensionId" : 5639445604728832,
+    "versionId" : 5687539843203072,
+    "extensionName" : "Microsoft WebDriver",
+    "versionDate" : null,
+    "authorUrl" : "https://github.com/ChrisLMerrill",
+    "versionName" : "5.16299",
+    "assets" : [ {
+      "content" : null,
+      "url" : "https://download.microsoft.com/download/D/4/1/D417998A-58EE-4EFE-A7CC-39EF9E020768/MicrosoftWebDriver.exe",
+      "defaultPath" : "webdrivers/edgedriver/5.16299/MicrosoftWebDriver.exe",
+      "stringContent" : null,
+      "installInstructions" : [ {
+        "parameters" : null,
+        "actionName" : "Download"
+      } ]
+    } ],
+    "extensionDesc" : "Microsoft WebDriver is an executable used by WebDriver to control the Microsoft Edge browser.",
+    "extensionAuthor" : "Chris Merrill",
+    "versionDescription" : "Supports Edge 16.16299"
+  },
+  "log" : {
+    "entry" : null,
+    "registryUpdateMessage" : null,
+    "numberActionFailures" : 0,
+    "installedFilePaths" : [ "webdrivers\\edgedriver\\5.16299", "webdrivers\\edgedriver\\5.16299\\MicrosoftWebDriver.exe" ],
+    "numberFilesInstalled" : 2,
+    "registryUpdated" : false
+  }
+}
