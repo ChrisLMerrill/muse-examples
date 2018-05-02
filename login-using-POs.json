@@ -1,167 +1,170 @@
 {
   "type" : "steppedtest",
   "step" : {
+    "type" : "scope",
     "children" : [ {
+      "type" : "open-browser",
       "sources" : {
         "provider" : {
+          "type" : "variable",
           "source" : {
-            "type" : "string",
-            "value" : "provider"
-          },
-          "type" : "variable"
+            "value" : "provider",
+            "type" : "string"
+          }
         },
         "browser" : {
+          "type" : "variable",
           "source" : {
-            "type" : "string",
-            "value" : "browser"
-          },
-          "type" : "variable"
+            "value" : "browser",
+            "type" : "string"
+          }
         }
       },
-      "type" : "open-browser",
       "metadata" : {
         "_id" : 92625388830802
       }
     }, {
+      "type" : "start-at-page",
       "children" : [ {
+        "type" : "click-element",
         "sources" : {
           "element" : {
             "type" : "page-element",
             "sourceMap" : {
               "element" : {
-                "type" : "string",
-                "value" : "LoginPageLink"
+                "value" : "LoginPageLink",
+                "type" : "string"
               },
               "page" : {
-                "type" : "string",
-                "value" : "HomePage"
+                "value" : "HomePage",
+                "type" : "string"
               }
             }
           }
         },
-        "type" : "click-element",
         "metadata" : {
           "_id" : 92625388830812
         }
       } ],
       "sources" : {
         "pageid" : {
-          "type" : "string",
-          "value" : "HomePage"
+          "value" : "HomePage",
+          "type" : "string"
         }
       },
-      "type" : "start-at-page",
       "metadata" : {
         "_id" : 92625388830805
       }
     }, {
+      "type" : "on-page",
       "children" : [ {
+        "type" : "perform-action",
         "sources" : {
           "actionid" : {
-            "type" : "string",
-            "value" : "Login"
+            "value" : "Login",
+            "type" : "string"
           },
           "pageid" : {
-            "type" : "string",
-            "value" : "LoginPage"
+            "value" : "LoginPage",
+            "type" : "string"
           },
           "user" : {
+            "type" : "variable",
             "source" : {
-              "type" : "string",
-              "value" : "username"
-            },
-            "type" : "variable"
+              "value" : "username",
+              "type" : "string"
+            }
           },
           "pass" : {
+            "type" : "variable",
             "source" : {
-              "type" : "string",
-              "value" : "password"
-            },
-            "type" : "variable"
+              "value" : "password",
+              "type" : "string"
+            }
           }
         },
-        "type" : "perform-action",
         "metadata" : {
           "_id" : 92625388830823
         }
       }, {
+        "type" : "verify",
         "sources" : {
           "condition" : {
             "type" : "page-condition",
             "sourceMap" : {
               "condition" : {
-                "type" : "string",
-                "value" : "SuccessIsShown"
+                "value" : "SuccessIsShown",
+                "type" : "string"
               },
               "page" : {
-                "type" : "string",
-                "value" : "LoginPage"
+                "value" : "LoginPage",
+                "type" : "string"
               }
             }
           }
         },
-        "type" : "verify",
         "metadata" : {
           "_id" : 92625388830825
         }
       }, {
+        "type" : "if",
         "children" : [ {
+          "type" : "click-element",
           "sources" : {
             "element" : {
               "type" : "page-element",
               "sourceMap" : {
                 "page" : {
-                  "type" : "string",
-                  "value" : "LoginPage"
+                  "value" : "LoginPage",
+                  "type" : "string"
                 },
                 "element" : {
-                  "type" : "string",
-                  "value" : "LogoutButton"
+                  "value" : "LogoutButton",
+                  "type" : "string"
                 }
               }
             }
           },
-          "type" : "click-element",
           "metadata" : {
             "_id" : 92625388830726
           }
         }, {
+          "type" : "wait",
           "sources" : {
             "condition" : {
               "type" : "page-condition",
               "sourceMap" : {
                 "condition" : {
-                  "type" : "string",
-                  "value" : "ContentSectionExists"
+                  "value" : "ContentSectionExists",
+                  "type" : "string"
                 },
                 "page" : {
-                  "type" : "string",
-                  "value" : "LoginPage"
+                  "value" : "LoginPage",
+                  "type" : "string"
                 }
               }
             }
           },
-          "type" : "wait",
           "metadata" : {
             "_id" : 92625388830727
           }
         }, {
+          "type" : "verify",
           "sources" : {
             "condition" : {
               "type" : "page-condition",
               "sourceMap" : {
                 "condition" : {
-                  "type" : "string",
-                  "value" : "SuccessIsShown"
+                  "value" : "SuccessIsShown",
+                  "type" : "string"
                 },
                 "page" : {
-                  "type" : "string",
-                  "value" : "LoginPage"
+                  "value" : "LoginPage",
+                  "type" : "string"
                 }
               }
             }
           },
-          "type" : "verify",
           "metadata" : {
             "_id" : 92625388830728
           }
@@ -171,28 +174,26 @@
             "type" : "page-condition",
             "sourceMap" : {
               "condition" : {
-                "type" : "string",
-                "value" : "LogoutButtonExists"
+                "value" : "LogoutButtonExists",
+                "type" : "string"
               },
               "page" : {
-                "type" : "string",
-                "value" : "LoginPage"
+                "value" : "LoginPage",
+                "type" : "string"
               }
             }
           }
         },
-        "type" : "if",
         "metadata" : {
           "_id" : 92625388830827
         }
       } ],
       "sources" : {
         "pageid" : {
-          "type" : "string",
-          "value" : "LoginPage"
+          "value" : "LoginPage",
+          "type" : "string"
         }
       },
-      "type" : "on-page",
       "metadata" : {
         "_id" : 92625388830818
       }
@@ -202,19 +203,18 @@
         "_id" : 92625388830831
       }
     } ],
-    "type" : "scope",
     "metadata" : {
       "_id" : 92625388830803
     }
   },
   "defaultVariables" : {
     "username" : {
-      "type" : "string",
-      "value" : "tomsmith"
+      "value" : "tomsmith",
+      "type" : "string"
     },
     "password" : {
-      "type" : "string",
-      "value" : "SuperSecretPassword!"
+      "value" : "SuperSecretPassword!",
+      "type" : "string"
     }
   },
   "tags" : [ ]

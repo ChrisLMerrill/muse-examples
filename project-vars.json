@@ -8,13 +8,6 @@
         "type" : "string"
       }
     },
-    "browser" : {
-      "type" : "resource",
-      "source" : {
-        "value" : "phantomjs",
-        "type" : "string"
-      }
-    },
     "output_path" : {
       "value" : "C:\\\\Temp\\\\jenkins-muse-output",
       "type" : "string"

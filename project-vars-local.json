@@ -9,7 +9,7 @@
       }
     },
     "output_path" : {
-      "value" : "C:\\\\Temp\\\\muse-output",
+      "value" : "muse-output",
       "type" : "string"
     }
   },

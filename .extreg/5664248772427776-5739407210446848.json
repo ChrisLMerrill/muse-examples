@@ -1,0 +1,73 @@
+{
+  "info" : {
+    "extensionDesc" : "GeckoDriver is an executable used by WebDriver to control the Mozilla Firefox browser.",
+    "authorUrl" : "https://github.com/ChrisLMerrill",
+    "assets" : [ {
+      "content" : null,
+      "url" : "https://github.com/mozilla/geckodriver/releases/download/v0.20.1/geckodriver-v0.20.1-win64.zip",
+      "defaultPath" : "webdrivers/geckodriver/0.20.1/geckodriver-win64.zip",
+      "stringContent" : null,
+      "installInstructions" : [ {
+        "parameters" : null,
+        "actionName" : "Download"
+      }, {
+        "parameters" : {
+          "filename" : "geckodriver_win64.exe"
+        },
+        "actionName" : "UnzipOneAs"
+      }, {
+        "parameters" : null,
+        "actionName" : "DeleteFile"
+      } ]
+    }, {
+      "content" : null,
+      "url" : "https://github.com/mozilla/geckodriver/releases/download/v0.20.1/geckodriver-v0.20.1-win32.zip",
+      "defaultPath" : "webdrivers/geckodriver/0.20.1/geckodriver-win32.zip",
+      "stringContent" : null,
+      "installInstructions" : [ {
+        "parameters" : null,
+        "actionName" : "Download"
+      }, {
+        "parameters" : {
+          "filename" : "geckodriver_win32.exe"
+        },
+        "actionName" : "UnzipOneAs"
+      }, {
+        "parameters" : null,
+        "actionName" : "DeleteFile"
+      } ]
+    }, {
+      "content" : null,
+      "url" : "https://github.com/mozilla/geckodriver/releases/download/v0.20.1/geckodriver-v0.20.1-linux64.tar.gz",
+      "defaultPath" : "webdrivers/geckodriver/0.20.1/geckodriver-linux64.tar.gz",
+      "stringContent" : null,
+      "installInstructions" : [ {
+        "parameters" : null,
+        "actionName" : "Download"
+      }, {
+        "parameters" : {
+          "filename" : "geckodriver_linux64"
+        },
+        "actionName" : "UntargzOneAs"
+      }, {
+        "parameters" : null,
+        "actionName" : "DeleteFile"
+      } ]
+    } ],
+    "extensionId" : 5664248772427776,
+    "versionId" : 5739407210446848,
+    "extensionName" : "GeckoDriver",
+    "versionName" : "0.20.1",
+    "versionDate" : null,
+    "versionDescription" : "Supports Firefox 55+ and Selenium 3.5+",
+    "extensionAuthor" : "Chris Merrill"
+  },
+  "log" : {
+    "entry" : null,
+    "numberActionFailures" : 0,
+    "numberFilesInstalled" : 4,
+    "registryUpdated" : false,
+    "installedFilePaths" : [ "webdrivers\\geckodriver\\0.20.1", "webdrivers\\geckodriver\\0.20.1\\geckodriver_win64.exe", "webdrivers\\geckodriver\\0.20.1\\geckodriver_win32.exe", "webdrivers\\geckodriver\\0.20.1\\geckodriver_linux64" ],
+    "registryUpdateMessage" : null
+  }
+}
