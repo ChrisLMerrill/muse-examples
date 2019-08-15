@@ -3,18 +3,15 @@
   "parameters" : {
     "apply-condition" : {
       "value" : true,
-      "type" : "boolean",
-      "sourceList" : [ ]
+      "type" : "boolean"
     },
     "auto-apply" : {
       "value" : true,
-      "type" : "boolean",
-      "sourceList" : [ ]
+      "type" : "boolean"
     },
     "overwrite" : {
-      "value" : true,
-      "type" : "boolean",
-      "sourceList" : [ ]
+      "value" : false,
+      "type" : "boolean"
     }
   },
   "tags" : [ ]

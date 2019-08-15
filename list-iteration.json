@@ -1,0 +1,128 @@
+{
+  "type" : "steppedtest",
+  "step" : {
+    "type" : "scope",
+    "children" : [ {
+      "type" : "store-variable",
+      "sources" : {
+        "name" : {
+          "value" : "list",
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "list",
+          "sourceList" : [ {
+            "value" : "abc",
+            "type" : "string"
+          }, {
+            "value" : "def",
+            "type" : "string"
+          }, {
+            "value" : "xyz",
+            "type" : "string"
+          } ]
+        }
+      },
+      "metadata" : {
+        "_id" : 92625388831166
+      }
+    }, {
+      "type" : "store-variable",
+      "sources" : {
+        "name" : {
+          "value" : "index",
+          "type" : "string"
+        },
+        "value" : {
+          "value" : 0,
+          "type" : "integer"
+        }
+      },
+      "metadata" : {
+        "_id" : 92625388831164
+      }
+    }, {
+      "type" : "while",
+      "children" : [ {
+        "type" : "log-message",
+        "sources" : {
+          "message" : {
+            "type" : "get-item",
+            "sourceMap" : {
+              "selector" : {
+                "type" : "variable",
+                "source" : {
+                  "value" : "index",
+                  "type" : "string"
+                }
+              },
+              "collection" : {
+                "type" : "variable",
+                "source" : {
+                  "value" : "list",
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        },
+        "metadata" : {
+          "_id" : 92625388831359
+        }
+      }, {
+        "type" : "increment-variable",
+        "sources" : {
+          "amount" : {
+            "value" : 1,
+            "type" : "integer"
+          },
+          "name" : {
+            "value" : "index",
+            "type" : "string"
+          }
+        },
+        "metadata" : {
+          "_id" : 92625388831168
+        }
+      } ],
+      "sources" : {
+        "condition" : {
+          "type" : "lessthan",
+          "sourceMap" : {
+            "left" : {
+              "type" : "variable",
+              "source" : {
+                "value" : "index",
+                "type" : "string"
+              }
+            },
+            "right" : {
+              "type" : "property",
+              "sourceMap" : {
+                "name" : {
+                  "value" : "size",
+                  "type" : "string"
+                },
+                "target" : {
+                  "type" : "variable",
+                  "source" : {
+                    "value" : "list",
+                    "type" : "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 92625388831165
+      }
+    } ],
+    "metadata" : {
+      "_id" : 92625388831162
+    }
+  },
+  "defaultVariables" : { },
+  "tags" : [ ]
+}

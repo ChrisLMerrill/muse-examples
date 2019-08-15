@@ -4,9 +4,6 @@
     "type" : "compound",
     "children" : [ {
       "type" : "open-browser",
-      "metadata" : {
-        "_id" : 92625388830732
-      },
       "sources" : {
         "provider" : {
           "type" : "variable",
@@ -22,23 +19,37 @@
             "type" : "string"
           }
         }
+      },
+      "metadata" : {
+        "_id" : 92625388830732
       }
     }, {
       "type" : "goto-url",
-      "metadata" : {
-        "_id" : 92625388830733
-      },
       "sources" : {
         "URL" : {
           "value" : "https://the-internet.herokuapp.com/",
           "type" : "string"
         }
+      },
+      "metadata" : {
+        "_id" : 92625388830733
+      }
+    }, {
+      "type" : "click-element",
+      "sources" : {
+        "element" : {
+          "type" : "element-linktext",
+          "source" : {
+            "value" : "Form Authentication",
+            "type" : "string"
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 92625388830837
       }
     }, {
       "type" : "callfunction",
-      "metadata" : {
-        "_id" : 92625388830734
-      },
       "sources" : {
         "id" : {
           "value" : "form-login",
@@ -58,12 +69,12 @@
             "type" : "string"
           }
         }
+      },
+      "metadata" : {
+        "_id" : 92625388830734
       }
     }, {
       "type" : "verify",
-      "metadata" : {
-        "_id" : 92625388830735
-      },
       "sources" : {
         "condition" : {
           "type" : "has-class",
@@ -101,6 +112,9 @@
             }
           }
         }
+      },
+      "metadata" : {
+        "_id" : 92625388830735
       }
     }, {
       "type" : "close-browser",

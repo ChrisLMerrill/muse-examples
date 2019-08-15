@@ -4,6 +4,9 @@
     "type" : "scope",
     "children" : [ {
       "type" : "open-browser",
+      "metadata" : {
+        "_id" : 92625388830802
+      },
       "sources" : {
         "provider" : {
           "type" : "variable",
@@ -19,14 +22,14 @@
             "type" : "string"
           }
         }
-      },
-      "metadata" : {
-        "_id" : 92625388830802
       }
     }, {
       "type" : "start-at-page",
       "children" : [ {
         "type" : "click-element",
+        "metadata" : {
+          "_id" : 92625388830812
+        },
         "sources" : {
           "element" : {
             "type" : "page-element",
@@ -41,24 +44,24 @@
               }
             }
           }
-        },
-        "metadata" : {
-          "_id" : 92625388830812
         }
       } ],
+      "metadata" : {
+        "_id" : 92625388830805
+      },
       "sources" : {
         "pageid" : {
           "value" : "HomePage",
           "type" : "string"
         }
-      },
-      "metadata" : {
-        "_id" : 92625388830805
       }
     }, {
       "type" : "on-page",
       "children" : [ {
         "type" : "perform-action",
+        "metadata" : {
+          "_id" : 92625388830823
+        },
         "sources" : {
           "actionid" : {
             "value" : "Login",
@@ -82,12 +85,12 @@
               "type" : "string"
             }
           }
-        },
-        "metadata" : {
-          "_id" : 92625388830823
         }
       }, {
         "type" : "verify",
+        "metadata" : {
+          "_id" : 92625388830825
+        },
         "sources" : {
           "condition" : {
             "type" : "page-condition",
@@ -102,14 +105,14 @@
               }
             }
           }
-        },
-        "metadata" : {
-          "_id" : 92625388830825
         }
       }, {
         "type" : "if",
         "children" : [ {
           "type" : "click-element",
+          "metadata" : {
+            "_id" : 92625388830726
+          },
           "sources" : {
             "element" : {
               "type" : "page-element",
@@ -124,12 +127,12 @@
                 }
               }
             }
-          },
-          "metadata" : {
-            "_id" : 92625388830726
           }
         }, {
           "type" : "wait",
+          "metadata" : {
+            "_id" : 92625388830727
+          },
           "sources" : {
             "condition" : {
               "type" : "page-condition",
@@ -144,12 +147,12 @@
                 }
               }
             }
-          },
-          "metadata" : {
-            "_id" : 92625388830727
           }
         }, {
           "type" : "verify",
+          "metadata" : {
+            "_id" : 92625388830728
+          },
           "sources" : {
             "condition" : {
               "type" : "page-condition",
@@ -164,11 +167,11 @@
                 }
               }
             }
-          },
-          "metadata" : {
-            "_id" : 92625388830728
           }
         } ],
+        "metadata" : {
+          "_id" : 92625388830827
+        },
         "sources" : {
           "condition" : {
             "type" : "page-condition",
@@ -183,19 +186,16 @@
               }
             }
           }
-        },
-        "metadata" : {
-          "_id" : 92625388830827
         }
       } ],
+      "metadata" : {
+        "_id" : 92625388830818
+      },
       "sources" : {
         "pageid" : {
           "value" : "LoginPage",
           "type" : "string"
         }
-      },
-      "metadata" : {
-        "_id" : 92625388830818
       }
     }, {
       "type" : "close-browser",

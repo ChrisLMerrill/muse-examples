@@ -38,10 +38,6 @@
         },
         "element" : {
           "type" : "element-id",
-          "source" : {
-            "value" : "username",
-            "type" : "string"
-          },
           "sourceMap" : {
             "element" : {
               "value" : "UsernameField",
@@ -51,6 +47,10 @@
               "value" : "LoginPage",
               "type" : "string"
             }
+          },
+          "source" : {
+            "value" : "username",
+            "type" : "string"
           }
         }
       }
@@ -73,10 +73,6 @@
         },
         "element" : {
           "type" : "element-id",
-          "source" : {
-            "value" : "password",
-            "type" : "string"
-          },
           "sourceMap" : {
             "page" : {
               "value" : "LoginPage",
@@ -86,6 +82,10 @@
               "value" : "PasswordField",
               "type" : "string"
             }
+          },
+          "source" : {
+            "value" : "password",
+            "type" : "string"
           }
         }
       }
@@ -97,10 +97,6 @@
       "sources" : {
         "element" : {
           "type" : "element-id",
-          "source" : {
-            "value" : "login",
-            "type" : "string"
-          },
           "sourceMap" : {
             "page" : {
               "value" : "LoginPage",
@@ -110,6 +106,10 @@
               "value" : "LoginForm",
               "type" : "string"
             }
+          },
+          "source" : {
+            "value" : "login",
+            "type" : "string"
           }
         }
       }

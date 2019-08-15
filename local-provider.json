@@ -2,22 +2,17 @@
   "type" : "webdriver-provider-list",
   "providers" : [ {
     "type" : "firefox-marionette-provider",
-    "arguments" : [ "-headless" ],
-    "relativePath" : "webdrivers/geckodriver/0.20.1/geckodriver_win32.exe",
-    "os" : "Windows"
+    "os" : "Windows",
+    "relativePath" : "webdrivers/geckodriver/0.23.0/geckodriver_win64.exe"
   }, {
     "type" : "chromedriver-provider",
-    "relativePath" : "webdrivers/chromedriver/2.37/chromedriver.exe",
-    "os" : "Windows"
-  }, {
-    "type" : "edgedriver-provider",
-    "relativePath" : "webdrivers/edgedriver/5.16299/MicrosoftWebDriver.exe",
-    "os" : "Windows"
+    "os" : "Windows",
+    "relativePath" : "webdrivers/chromedriver/2.37/chromedriver.exe"
   }, {
     "type" : "firefox-marionette-provider",
+    "os" : "Linux",
     "arguments" : [ "-headless" ],
-    "relativePath" : "webdrivers/geckodriver/0.20.1/geckodriver_linux64",
-    "os" : "Linux"
+    "relativePath" : "webdrivers/geckodriver/0.20.1/geckodriver_linux64"
   } ],
   "tags" : [ ]
 }
