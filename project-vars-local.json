@@ -1,13 +1,6 @@
 {
   "type" : "variables",
   "variables" : {
-    "browser" : {
-      "type" : "resource",
-      "source" : {
-        "value" : "firefox",
-        "type" : "string"
-      }
-    },
     "output_path" : {
       "value" : "muse-output",
       "type" : "string"

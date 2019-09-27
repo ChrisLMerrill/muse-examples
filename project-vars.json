@@ -11,6 +11,13 @@
     "output_path" : {
       "value" : "C:\\\\Temp\\\\jenkins-muse-output",
       "type" : "string"
+    },
+    "browser" : {
+      "type" : "resource",
+      "source" : {
+        "value" : "chrome",
+        "type" : "string"
+      }
     }
   },
   "tags" : [ ]

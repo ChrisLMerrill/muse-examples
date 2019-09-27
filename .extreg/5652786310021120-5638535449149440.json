@@ -1,0 +1,40 @@
+{
+  "info" : {
+    "extensionId" : 5652786310021120,
+    "versionId" : 5638535449149440,
+    "extensionName" : "Page Objects",
+    "extensionAuthor" : "Chris Merrill",
+    "extensionDesc" : "Tools for building tests using the PageObjects pattern.",
+    "authorUrl" : "https://github.com/ChrisLMerrill",
+    "versionName" : "0.2",
+    "versionDate" : null,
+    "assets" : [ {
+      "content" : null,
+      "url" : "https://museide.s3.amazonaws.com/extensions/pageobjects/pageobjects-0.2.jar",
+      "defaultPath" : "lib/pageobjects-0.2.jar",
+      "stringContent" : null,
+      "installInstructions" : [ {
+        "parameters" : null,
+        "actionName" : "Download"
+      } ]
+    }, {
+      "content" : null,
+      "url" : "https://museide.s3.amazonaws.com/extensions/pageobjects/pageobjects-ui-0.2.jar",
+      "defaultPath" : "lib/pageobjects-ui-0.2.jar",
+      "stringContent" : null,
+      "installInstructions" : [ {
+        "parameters" : null,
+        "actionName" : "Download"
+      } ]
+    } ],
+    "versionDescription" : "Tools for building Selenium tests using the Page Objects pattern"
+  },
+  "log" : {
+    "entry" : null,
+    "registryUpdateMessage" : null,
+    "installedFilePaths" : [ "lib\\pageobjects-0.2.jar", "lib\\pageobjects-ui-0.2.jar" ],
+    "numberActionFailures" : 0,
+    "numberFilesInstalled" : 2,
+    "registryUpdated" : false
+  }
+}
