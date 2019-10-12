@@ -1,6 +1,6 @@
 apply plugin: 'java'
 
-version 0.15
+version '0.15.1'
 
 repositories
     {
