@@ -2,37 +2,37 @@
   "type" : "compound-plugin",
   "parameters" : {
     "apply-condition" : {
-      "type" : "boolean",
-      "value" : true
+      "value" : true,
+      "type" : "boolean"
     },
     "lists" : {
       "type" : "list",
       "sourceList" : [ {
-        "type" : "string",
-        "value" : "event-logger"
+        "value" : "init-project-vars",
+        "type" : "string"
       }, {
-        "type" : "string",
-        "value" : "init-project-vars"
+        "value" : "init-project-vars-local",
+        "type" : "string"
       }, {
-        "type" : "string",
-        "value" : "init-project-vars-local"
+        "value" : "local-storage-location",
+        "type" : "string"
       }, {
-        "type" : "string",
-        "value" : "test-defaults-initializer"
+        "value" : "test-defaults-initializer",
+        "type" : "string"
       }, {
-        "type" : "string",
-        "value" : "local-storage-location"
+        "value" : "event-logger",
+        "type" : "string"
       }, {
-        "type" : "string",
-        "value" : "test-results-saver"
+        "value" : "test-results-saver",
+        "type" : "string"
       }, {
-        "type" : "string",
-        "value" : "test-result-calculator"
+        "value" : "test-result-calculator",
+        "type" : "string"
       } ]
     },
     "auto-apply" : {
-      "type" : "boolean",
-      "value" : true
+      "value" : true,
+      "type" : "boolean"
     }
   },
   "tags" : [ ]

@@ -15,7 +15,7 @@
     "browser" : {
       "type" : "resource",
       "source" : {
-        "value" : "chrome",
+        "value" : "firefox",
         "type" : "string"
       }
     }
