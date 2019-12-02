@@ -28,6 +28,9 @@
       }, {
         "value" : "test-result-calculator",
         "type" : "string"
+      }, {
+        "value" : "junit-report",
+        "type" : "string"
       } ]
     },
     "auto-apply" : {
