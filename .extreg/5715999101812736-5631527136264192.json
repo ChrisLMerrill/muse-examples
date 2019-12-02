@@ -1,0 +1,54 @@
+{
+  "info" : {
+    "extensionId" : 5715999101812736,
+    "versionDescription" : "Supports Chrome 77",
+    "versionId" : 5631527136264192,
+    "extensionAuthor" : "Chris Merrill",
+    "authorUrl" : "https://github.com/ChrisLMerrill",
+    "extensionName" : "ChromeDriver",
+    "extensionDesc" : "ChromeDriver is an executable used by WebDriver to control the Google Chrome browser.",
+    "versionName" : "77.0.3865.40",
+    "assets" : [ {
+      "content" : null,
+      "url" : "https://chromedriver.storage.googleapis.com/77.0.3865.40/chromedriver_win32.zip",
+      "installInstructions" : [ {
+        "parameters" : null,
+        "actionName" : "Download"
+      }, {
+        "parameters" : null,
+        "actionName" : "UnzipAll"
+      }, {
+        "parameters" : null,
+        "actionName" : "DeleteFile"
+      } ],
+      "stringContent" : null,
+      "defaultPath" : "webdrivers/chromedriver/77.0.3865.40/chromedriver_win32.zip"
+    }, {
+      "content" : null,
+      "url" : "https://chromedriver.storage.googleapis.com/77.0.3865.40/chromedriver_mac64.zip",
+      "installInstructions" : [ {
+        "parameters" : null,
+        "actionName" : "Download"
+      }, {
+        "parameters" : {
+          "filename" : "chromedriver_mac64"
+        },
+        "actionName" : "UnzipOneAs"
+      }, {
+        "parameters" : null,
+        "actionName" : "DeleteFile"
+      } ],
+      "stringContent" : null,
+      "defaultPath" : "webdrivers/chromedriver/77.0.3865.40/chromedriver_mac64.zip"
+    } ],
+    "versionDate" : null
+  },
+  "log" : {
+    "entry" : null,
+    "numberActionFailures" : 0,
+    "numberFilesInstalled" : 3,
+    "installedFilePaths" : [ "webdrivers\\chromedriver\\77.0.3865.40", "webdrivers\\chromedriver\\77.0.3865.40\\chromedriver.exe", "webdrivers\\chromedriver\\77.0.3865.40\\chromedriver_mac64" ],
+    "registryUpdateMessage" : null,
+    "registryUpdated" : false
+  }
+}
