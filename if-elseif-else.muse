@@ -1,0 +1,153 @@
+{
+  "type" : "steppedtest",
+  "defaultVariables" : { },
+  "step" : {
+    "type" : "scope",
+    "children" : [ {
+      "type" : "store-variable",
+      "sources" : {
+        "name" : {
+          "value" : "counter",
+          "type" : "string"
+        },
+        "value" : {
+          "value" : 2,
+          "type" : "integer"
+        }
+      },
+      "metadata" : {
+        "_id" : 92625388831656
+      }
+    }, {
+      "type" : "if",
+      "children" : [ {
+        "type" : "log-message",
+        "sources" : {
+          "message" : {
+            "value" : "counter is one",
+            "type" : "string"
+          }
+        },
+        "metadata" : {
+          "_id" : 92625388831658
+        }
+      } ],
+      "sources" : {
+        "condition" : {
+          "type" : "equals",
+          "sourceMap" : {
+            "left" : {
+              "type" : "variable",
+              "source" : {
+                "value" : "counter",
+                "type" : "string"
+              }
+            },
+            "right" : {
+              "value" : 1,
+              "type" : "integer"
+            }
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 92625388831657
+      }
+    }, {
+      "type" : "else-if",
+      "children" : [ {
+        "type" : "log-message",
+        "sources" : {
+          "message" : {
+            "value" : "counter is two",
+            "type" : "string"
+          }
+        },
+        "metadata" : {
+          "_id" : 92625388831661
+        }
+      } ],
+      "sources" : {
+        "condition" : {
+          "type" : "equals",
+          "sourceMap" : {
+            "left" : {
+              "type" : "variable",
+              "source" : {
+                "value" : "counter",
+                "type" : "string"
+              }
+            },
+            "right" : {
+              "value" : 2,
+              "type" : "integer"
+            }
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 92625388831659
+      }
+    }, {
+      "type" : "else-if",
+      "children" : [ {
+        "type" : "log-message",
+        "sources" : {
+          "message" : {
+            "value" : "counter is three",
+            "type" : "string"
+          }
+        },
+        "metadata" : {
+          "_id" : 92625388831668
+        }
+      } ],
+      "sources" : {
+        "condition" : {
+          "type" : "equals",
+          "sourceMap" : {
+            "left" : {
+              "type" : "variable",
+              "source" : {
+                "value" : "counter",
+                "type" : "string"
+              }
+            },
+            "right" : {
+              "value" : 3,
+              "type" : "integer"
+            }
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 92625388831663
+      }
+    }, {
+      "type" : "else",
+      "children" : [ {
+        "type" : "log-message",
+        "sources" : {
+          "message" : {
+            "value" : "counter is something else",
+            "type" : "string"
+          }
+        },
+        "metadata" : {
+          "_id" : 92625388831666
+        }
+      } ],
+      "metadata" : {
+        "_id" : 92625388831664
+      }
+    } ],
+    "metadata" : {
+      "_id" : 92625388831654
+    }
+  },
+  "tags" : [ ],
+  "metadata" : {
+    "path" : "",
+    "filename" : "if-elseif-else.muse"
+  }
+}
