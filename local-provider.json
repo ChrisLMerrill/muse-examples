@@ -3,16 +3,20 @@
   "providers" : [ {
     "type" : "firefox-marionette-provider",
     "os" : "Windows",
-    "relativePath" : "webdrivers/geckodriver/0.24.0/geckodriver_win64.exe"
+    "relativePath" : "webdrivers/geckodriver/0.26.0/geckodriver_win64.exe"
   }, {
     "type" : "chromedriver-provider",
     "os" : "Windows",
-    "relativePath" : "webdrivers/chromedriver/77.0.3865.40/chromedriver.exe"
+    "relativePath" : "webdrivers/chromedriver/79.0.3945.36/chromedriver.exe"
   }, {
     "type" : "firefox-marionette-provider",
-    "os" : "Linux",
     "arguments" : [ "-headless" ],
-    "relativePath" : "webdrivers/geckodriver/0.24.0/geckodriver_linux64"
+    "os" : "Linux",
+    "relativePath" : "webdrivers/geckodriver/0.26.0/geckodriver_linux64"
   } ],
-  "tags" : [ ]
+  "tags" : [ ],
+  "metadata" : {
+    "path" : "",
+    "filename" : "local-provider.json"
+  }
 }
