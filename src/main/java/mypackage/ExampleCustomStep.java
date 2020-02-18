@@ -1,12 +1,12 @@
 package mypackage;
 
-import org.musetest.core.*;
-import org.musetest.core.context.*;
-import org.musetest.core.events.*;
-import org.musetest.core.resource.*;
-import org.musetest.core.step.*;
-import org.musetest.core.step.descriptor.*;
-import org.musetest.core.values.*;
+import org.museautomation.core.*;
+import org.museautomation.core.context.*;
+import org.museautomation.core.events.*;
+import org.museautomation.core.resource.*;
+import org.museautomation.core.step.*;
+import org.museautomation.core.step.descriptor.*;
+import org.museautomation.core.values.*;
 
 import java.util.*;
 
