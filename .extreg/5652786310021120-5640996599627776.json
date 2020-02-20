@@ -1,0 +1,22 @@
+{
+  "info" : {
+    "extensionId" : 5652786310021120,
+    "extensionDesc" : "Tools for building tests using the PageObjects pattern.",
+    "authorUrl" : "https://github.com/ChrisLMerrill",
+    "extensionAuthor" : "Chris Merrill",
+    "extensionName" : "Page Objects",
+    "versionName" : "0.4",
+    "assets" : null,
+    "installTaskUrl" : "https://museide.s3.amazonaws.com/extensions/pageobjects/install-pageobjects-04.muse",
+    "versionDate" : null,
+    "versionId" : 5640996599627776,
+    "versionDescription" : "Compatible with Muse 0.22"
+  },
+  "log" : {
+    "numberFilesInstalled" : 0,
+    "numberActionFailures" : 0,
+    "installedFilePaths" : [ ],
+    "registryUpdateMessage" : null,
+    "registryUpdated" : false
+  }
+}
