@@ -1,6 +1,6 @@
 apply plugin: 'java'
 
-version '0.15.5'
+version '0.16'
 
 repositories
     {
@@ -17,8 +17,10 @@ dependencies
 task zip(type:Zip) {
     from projectDir
     exclude 'build/**'
+    exclude 'muse-output/**'
     exclude '.gradle'
     exclude '.idea'
+    exclude '.git'
     into baseName + '-' + version
     }
 
