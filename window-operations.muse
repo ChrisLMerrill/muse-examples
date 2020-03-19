@@ -1,0 +1,128 @@
+{
+  "type" : "steppedtask",
+  "step" : {
+    "children" : [ {
+      "sources" : {
+        "provider" : {
+          "type" : "resource",
+          "source" : {
+            "value" : "local-providers",
+            "type" : "string"
+          }
+        },
+        "browser" : {
+          "type" : "resource",
+          "source" : {
+            "value" : "firefox",
+            "type" : "string"
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 14243678453762
+      },
+      "type" : "open-browser"
+    }, {
+      "sources" : {
+        "URL" : {
+          "value" : "http://the-internet.herokuapp.com",
+          "type" : "string"
+        }
+      },
+      "metadata" : {
+        "_id" : 14243678453763
+      },
+      "type" : "goto-url"
+    }, {
+      "sources" : {
+        "width" : {
+          "value" : 400,
+          "type" : "integer"
+        },
+        "height" : {
+          "value" : 400,
+          "type" : "integer"
+        }
+      },
+      "metadata" : {
+        "_id" : 14243678453772
+      },
+      "type" : "browser-size"
+    }, {
+      "sources" : {
+        "x" : {
+          "value" : 1000,
+          "type" : "integer"
+        },
+        "y" : {
+          "value" : 500,
+          "type" : "integer"
+        }
+      },
+      "metadata" : {
+        "_id" : 14243678453768
+      },
+      "type" : "browser-position"
+    }, {
+      "metadata" : {
+        "_id" : 14243678453773
+      },
+      "type" : "browser-maximize"
+    }, {
+      "metadata" : {
+        "_id" : 14243678453774
+      },
+      "type" : "browser-fullscreen"
+    }, {
+      "sources" : {
+        "element" : {
+          "type" : "element-id",
+          "source" : {
+            "value" : "page-footer",
+            "type" : "string"
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 14243678453764
+      },
+      "type" : "capture-dom"
+    }, {
+      "sources" : {
+        "message" : {
+          "value" : "captured?",
+          "type" : "string"
+        }
+      },
+      "metadata" : {
+        "_id" : 14243678453765
+      },
+      "type" : "log-message"
+    } ],
+    "metadata" : {
+      "_id" : 14243678453760
+    },
+    "type" : "scope"
+  },
+  "defaultVariables" : { },
+  "tags" : [ ],
+  "inputStates" : {
+    "typeList" : [ ]
+  },
+  "outputSet" : {
+    "list" : [ ]
+  },
+  "outputStates" : {
+    "typeList" : [ ]
+  },
+  "inputSet" : {
+    "list" : [ ]
+  },
+  "inputs" : {
+    "list" : [ ]
+  },
+  "metadata" : {
+    "path" : "",
+    "filename" : "window-operations.muse"
+  }
+}

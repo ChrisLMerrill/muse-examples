@@ -1,0 +1,311 @@
+{
+  "type" : "steppedtask",
+  "step" : {
+    "children" : [ {
+      "sources" : {
+        "provider" : {
+          "type" : "resource",
+          "source" : {
+            "value" : "local-providers",
+            "type" : "string"
+          }
+        },
+        "browser" : {
+          "type" : "resource",
+          "source" : {
+            "value" : "chrome",
+            "type" : "string"
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548162
+      },
+      "type" : "open-browser"
+    }, {
+      "sources" : {
+        "URL" : {
+          "value" : "http://apache.org/",
+          "type" : "string"
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548163
+      },
+      "type" : "goto-url"
+    }, {
+      "sources" : {
+        "name" : {
+          "value" : "window1",
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "window-handle"
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548164
+      },
+      "type" : "store-variable"
+    }, {
+      "sources" : {
+        "handle" : {
+          "value" : "window2",
+          "type" : "string"
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548165
+      },
+      "type" : "new-window"
+    }, {
+      "sources" : {
+        "URL" : {
+          "value" : "http://github.com/",
+          "type" : "string"
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548171
+      },
+      "type" : "goto-url"
+    }, {
+      "sources" : {
+        "target" : {
+          "type" : "variable",
+          "source" : {
+            "value" : "window1",
+            "type" : "string"
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548172
+      },
+      "type" : "switch-to-window"
+    }, {
+      "sources" : {
+        "element" : {
+          "type" : "element-linktext",
+          "source" : {
+            "value" : "News",
+            "type" : "string"
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548175
+      },
+      "type" : "click-element"
+    }, {
+      "sources" : {
+        "handle" : {
+          "value" : "window3",
+          "type" : "string"
+        }
+      },
+      "children" : [ {
+        "sources" : {
+          "arguments" : {
+            "type" : "list"
+          },
+          "script" : {
+            "value" : "window.open('http://fontawesome.io/');",
+            "type" : "string"
+          }
+        },
+        "metadata" : {
+          "_id" : 15940595548180
+        },
+        "type" : "execute-js"
+      } ],
+      "metadata" : {
+        "_id" : 15940595548179
+      },
+      "type" : "capture-new-window"
+    }, {
+      "sources" : {
+        "target" : {
+          "type" : "variable",
+          "source" : {
+            "value" : "window2",
+            "type" : "string"
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548174
+      },
+      "type" : "switch-to-window"
+    }, {
+      "sources" : {
+        "element" : {
+          "type" : "element-xpath",
+          "source" : {
+            "value" : "//a[@href='/login']",
+            "type" : "string"
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548177
+      },
+      "type" : "click-element"
+    }, {
+      "sources" : {
+        "keys" : {
+          "value" : "username",
+          "type" : "string"
+        },
+        "element" : {
+          "type" : "element-name",
+          "source" : {
+            "value" : "login",
+            "type" : "string"
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548176
+      },
+      "type" : "send-keys"
+    }, {
+      "sources" : {
+        "target" : {
+          "type" : "variable",
+          "source" : {
+            "value" : "window3",
+            "type" : "string"
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548182
+      },
+      "type" : "switch-to-window"
+    }, {
+      "sources" : {
+        "message" : {
+          "sourceList" : [ {
+            "value" : "Now on window",
+            "type" : "string"
+          }, {
+            "type" : "window-handle"
+          } ],
+          "type" : "add"
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548183
+      },
+      "type" : "log-message"
+    }, {
+      "metadata" : {
+        "_id" : 15940595548184
+      },
+      "type" : "close-window"
+    }, {
+      "sources" : {
+        "target" : {
+          "sourceMap" : {
+            "selector" : {
+              "value" : 0,
+              "type" : "integer"
+            },
+            "collection" : {
+              "type" : "window-handles"
+            }
+          },
+          "type" : "get-item"
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548187
+      },
+      "type" : "switch-to-window"
+    }, {
+      "sources" : {
+        "element" : {
+          "type" : "element-linktext",
+          "source" : {
+            "value" : "Attic",
+            "type" : "string"
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548186
+      },
+      "type" : "click-element"
+    }, {
+      "sources" : {
+        "target" : {
+          "sourceMap" : {
+            "collection" : {
+              "type" : "window-handles"
+            },
+            "selector" : {
+              "value" : 1,
+              "type" : "integer"
+            }
+          },
+          "type" : "get-item"
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548189
+      },
+      "type" : "switch-to-window"
+    }, {
+      "sources" : {
+        "element" : {
+          "type" : "element-linktext",
+          "source" : {
+            "value" : "Terms",
+            "type" : "string"
+          }
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548190
+      },
+      "type" : "click-element"
+    }, {
+      "sources" : {
+        "message" : {
+          "value" : "windows handling example complete!",
+          "type" : "string"
+        }
+      },
+      "metadata" : {
+        "_id" : 15940595548161
+      },
+      "type" : "log-message"
+    } ],
+    "metadata" : {
+      "_id" : 15940595548160
+    },
+    "type" : "scope"
+  },
+  "defaultVariables" : { },
+  "tags" : [ ],
+  "inputStates" : {
+    "typeList" : [ ]
+  },
+  "outputSet" : {
+    "list" : [ ]
+  },
+  "outputStates" : {
+    "typeList" : [ ]
+  },
+  "inputSet" : {
+    "list" : [ ]
+  },
+  "inputs" : {
+    "list" : [ ]
+  },
+  "metadata" : {
+    "path" : "",
+    "filename" : "window-handles.muse"
+  }
+}
