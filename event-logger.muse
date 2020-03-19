@@ -3,14 +3,20 @@
   "parameters" : {
     "apply-condition" : {
       "value" : true,
-      "type" : "boolean",
-      "sourceList" : [ ]
+      "type" : "boolean"
     },
     "auto-apply" : {
       "value" : false,
-      "type" : "boolean",
-      "sourceList" : [ ]
+      "type" : "boolean"
+    },
+    "log-to-stdout" : {
+      "value" : true,
+      "type" : "boolean"
     }
   },
-  "tags" : [ ]
+  "tags" : [ ],
+  "metadata" : {
+    "path" : "",
+    "filename" : "event-logger.muse"
+  }
 }

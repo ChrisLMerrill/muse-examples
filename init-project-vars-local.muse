@@ -43,5 +43,9 @@
       "type" : "boolean"
     }
   },
+  "metadata" : {
+    "path" : "",
+    "filename" : "init-project-vars-local.muse"
+  },
   "tags" : [ ]
 }
