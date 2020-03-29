@@ -1,0 +1,79 @@
+{
+  "type" : "steppedtask",
+  "defaultVariables" : { },
+  "step" : {
+    "type" : "scope",
+    "children" : [ {
+      "type" : "foreach",
+      "children" : [ {
+        "type" : "log-message",
+        "metadata" : {
+          "_id" : 92625388831705
+        },
+        "sources" : {
+          "message" : {
+            "type" : "add",
+            "sourceList" : [ {
+              "value" : "index=",
+              "type" : "string"
+            }, {
+              "type" : "variable",
+              "source" : {
+                "value" : "index",
+                "type" : "string"
+              }
+            } ]
+          }
+        }
+      } ],
+      "metadata" : {
+        "_id" : 92625388831704
+      },
+      "sources" : {
+        "name" : {
+          "value" : "index",
+          "type" : "string"
+        },
+        "list" : {
+          "type" : "list",
+          "sourceList" : [ {
+            "value" : 1,
+            "type" : "integer"
+          }, {
+            "value" : 2,
+            "type" : "integer"
+          }, {
+            "value" : 3,
+            "type" : "integer"
+          } ]
+        }
+      }
+    } ],
+    "metadata" : {
+      "_id" : 92625388831379
+    }
+  },
+  "tags" : [ ],
+  "inputSet" : {
+    "list" : [ ]
+  },
+  "outputs" : {
+    "list" : [ ]
+  },
+  "inputStates" : {
+    "typeList" : [ ]
+  },
+  "outputStates" : {
+    "typeList" : [ ]
+  },
+  "inputs" : {
+    "list" : [ ]
+  },
+  "outputSet" : {
+    "list" : [ ]
+  },
+  "metadata" : {
+    "path" : "",
+    "filename" : "for-each.muse"
+  }
+}
