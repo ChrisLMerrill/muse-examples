@@ -2,11 +2,11 @@
   "type" : "variables",
   "variables" : {
     "provider" : {
-      "type" : "resource",
       "source" : {
-        "value" : "local-provider",
-        "type" : "string"
-      }
+        "type" : "string",
+        "value" : "local-provider"
+      },
+      "type" : "resource"
     },
     "output_path" : {
       "type" : "add",
@@ -14,29 +14,29 @@
         "type" : "property",
         "sourceMap" : {
           "name" : {
-            "value" : "TEMP",
-            "type" : "string"
+            "type" : "string",
+            "value" : "java.io.tmpdir"
           },
           "target" : {
             "type" : "property",
             "sourceMap" : {
               "name" : {
-                "value" : "vars",
-                "type" : "string"
+                "type" : "string",
+                "value" : "props"
               },
               "target" : {
-                "type" : "sysvar",
                 "source" : {
-                  "value" : "env",
-                  "type" : "string"
-                }
+                  "type" : "string",
+                  "value" : "env"
+                },
+                "type" : "sysvar"
               }
             }
           }
         }
       }, {
-        "value" : "\\\\muse-jenkins-output\\\\examples\\\\",
-        "type" : "string"
+        "type" : "string",
+        "value" : "\\\\muse-jenkins-output\\\\examples\\\\"
       }, {
         "type" : "date-format",
         "sourceMap" : {
@@ -44,23 +44,23 @@
             "type" : "null"
           },
           "format" : {
-            "value" : "yyyy.MMM.dd - hh.mm.ss.SSS aaa",
-            "type" : "string"
+            "type" : "string",
+            "value" : "yyyy.MMM.dd - hh.mm.ss.SSS aaa"
           }
         }
       } ]
     },
     "browser" : {
-      "type" : "resource",
       "source" : {
-        "value" : "firefox",
-        "type" : "string"
-      }
+        "type" : "string",
+        "value" : "firefox"
+      },
+      "type" : "resource"
     }
   },
-  "tags" : [ ],
   "metadata" : {
     "_path" : "",
     "_filename" : "project-vars.muse"
-  }
+  },
+  "tags" : [ ]
 }
