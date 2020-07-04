@@ -11,6 +11,8 @@ repositories
 dependencies
     {
     compile('org.museautomation:muse-core:[0.22,)')
+
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5+'
     }
 
 /* For creating the examples zip file */

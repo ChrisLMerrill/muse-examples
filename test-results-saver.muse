@@ -10,5 +10,9 @@
       "type" : "boolean"
     }
   },
+  "metadata" : {
+    "_path" : "",
+    "_filename" : "test-results-saver.muse"
+  },
   "tags" : [ ]
 }

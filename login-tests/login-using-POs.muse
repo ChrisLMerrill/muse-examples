@@ -1,5 +1,5 @@
 {
-  "type" : "steppedtest",
+  "type" : "steppedtask",
   "step" : {
     "type" : "scope",
     "children" : [ {
@@ -217,5 +217,27 @@
       "type" : "string"
     }
   },
-  "tags" : [ ]
+  "tags" : [ ],
+  "inputSet" : {
+    "list" : [ ]
+  },
+  "outputs" : {
+    "list" : [ ]
+  },
+  "outputSet" : {
+    "list" : [ ]
+  },
+  "outputStates" : {
+    "typeList" : [ ]
+  },
+  "inputStates" : {
+    "typeList" : [ ]
+  },
+  "inputs" : {
+    "list" : [ ]
+  },
+  "metadata" : {
+    "path" : "login-tests",
+    "filename" : "login-using-POs.muse"
+  }
 }

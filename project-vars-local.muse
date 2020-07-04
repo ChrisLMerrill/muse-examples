@@ -2,9 +2,51 @@
   "type" : "variables",
   "variables" : {
     "output_path" : {
-      "value" : "muse-output",
-      "type" : "string"
+      "type" : "add",
+      "sourceList" : [ {
+        "type" : "property",
+        "sourceMap" : {
+          "name" : {
+            "value" : "TEMP",
+            "type" : "string"
+          },
+          "target" : {
+            "type" : "property",
+            "sourceMap" : {
+              "name" : {
+                "value" : "vars",
+                "type" : "string"
+              },
+              "target" : {
+                "type" : "sysvar",
+                "source" : {
+                  "value" : "env",
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      }, {
+        "value" : "\\\\muse-output\\\\examples\\\\",
+        "type" : "string"
+      }, {
+        "type" : "date-format",
+        "sourceMap" : {
+          "date" : {
+            "type" : "null"
+          },
+          "format" : {
+            "value" : "yyyy.MMM.dd - hh.mm.ss.SSS aaa",
+            "type" : "string"
+          }
+        }
+      } ]
     }
   },
-  "tags" : [ ]
+  "tags" : [ ],
+  "metadata" : {
+    "_path" : "",
+    "_filename" : "project-vars-local.muse"
+  }
 }

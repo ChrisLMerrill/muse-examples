@@ -1,15 +1,11 @@
 {
   "type" : "steppedtask",
-  "defaultVariables" : { },
   "step" : {
     "type" : "scope",
     "children" : [ {
       "type" : "foreach",
       "children" : [ {
         "type" : "log-message",
-        "metadata" : {
-          "_id" : 92625388831705
-        },
         "sources" : {
           "message" : {
             "type" : "add",
@@ -24,11 +20,11 @@
               }
             } ]
           }
+        },
+        "metadata" : {
+          "_id" : 92625388831705
         }
       } ],
-      "metadata" : {
-        "_id" : 92625388831704
-      },
       "sources" : {
         "name" : {
           "value" : "index",
@@ -47,33 +43,27 @@
             "type" : "integer"
           } ]
         }
+      },
+      "metadata" : {
+        "_id" : 92625388831704
       }
     } ],
     "metadata" : {
       "_id" : 92625388831379
     }
   },
-  "tags" : [ ],
+  "defaultVariables" : { },
   "inputSet" : {
-    "list" : [ ]
-  },
-  "outputs" : {
-    "list" : [ ]
-  },
-  "inputStates" : {
-    "typeList" : [ ]
-  },
-  "outputStates" : {
-    "typeList" : [ ]
-  },
-  "inputs" : {
     "list" : [ ]
   },
   "outputSet" : {
     "list" : [ ]
   },
+  "tags" : [ ],
   "metadata" : {
     "path" : "",
-    "filename" : "for-each.muse"
+    "filename" : "for-each.muse",
+    "_path" : "",
+    "_filename" : "for-each.muse"
   }
 }
