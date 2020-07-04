@@ -2,11 +2,11 @@
   "type" : "variables",
   "variables" : {
     "provider" : {
+      "type" : "resource",
       "source" : {
-        "type" : "string",
-        "value" : "local-provider"
-      },
-      "type" : "resource"
+        "value" : "local-provider",
+        "type" : "string"
+      }
     },
     "output_path" : {
       "type" : "add",
@@ -14,29 +14,29 @@
         "type" : "property",
         "sourceMap" : {
           "name" : {
-            "type" : "string",
-            "value" : "java.io.tmpdir"
+            "value" : "java.io.tmpdir",
+            "type" : "string"
           },
           "target" : {
             "type" : "property",
             "sourceMap" : {
               "name" : {
-                "type" : "string",
-                "value" : "props"
+                "value" : "props",
+                "type" : "string"
               },
               "target" : {
+                "type" : "sysvar",
                 "source" : {
-                  "type" : "string",
-                  "value" : "env"
-                },
-                "type" : "sysvar"
+                  "value" : "env",
+                  "type" : "string"
+                }
               }
             }
           }
         }
       }, {
-        "type" : "string",
-        "value" : "\\\\muse-jenkins-output\\\\examples\\\\"
+        "value" : "\\\\muse-jenkins-output\\\\examples\\\\",
+        "type" : "string"
       }, {
         "type" : "date-format",
         "sourceMap" : {
@@ -44,18 +44,18 @@
             "type" : "null"
           },
           "format" : {
-            "type" : "string",
-            "value" : "yyyy.MMM.dd - hh.mm.ss.SSS aaa"
+            "value" : "yyyy.MMM.dd - hh.mm.ss.SSS aaa",
+            "type" : "string"
           }
         }
       } ]
     },
     "browser" : {
+      "type" : "resource",
       "source" : {
-        "type" : "string",
-        "value" : "firefox"
-      },
-      "type" : "resource"
+        "value" : "chrome",
+        "type" : "string"
+      }
     }
   },
   "metadata" : {
