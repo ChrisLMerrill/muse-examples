@@ -7,29 +7,29 @@
         "type" : "property",
         "sourceMap" : {
           "name" : {
-            "type" : "string",
-            "value" : "java.io.tmpdir"
+            "value" : "java.io.tmpdir",
+            "type" : "string"
           },
           "target" : {
             "type" : "property",
             "sourceMap" : {
               "name" : {
-                "type" : "string",
-                "value" : "props"
+                "value" : "props",
+                "type" : "string"
               },
               "target" : {
+                "type" : "sysvar",
                 "source" : {
-                  "type" : "string",
-                  "value" : "env"
-                },
-                "type" : "sysvar"
+                  "value" : "env",
+                  "type" : "string"
+                }
               }
             }
           }
         }
       }, {
-        "type" : "string",
-        "value" : "\\\\muse-output\\\\examples\\\\"
+        "value" : "muse-output/examples/",
+        "type" : "string"
       }, {
         "type" : "date-format",
         "sourceMap" : {
@@ -37,8 +37,8 @@
             "type" : "null"
           },
           "format" : {
-            "type" : "string",
-            "value" : "yyyy.MMM.dd - hh.mm.ss.SSS aaa"
+            "value" : "yyyy.MMM.dd - hh.mm.ss.SSS aaa",
+            "type" : "string"
           }
         }
       } ]

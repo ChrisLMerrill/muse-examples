@@ -35,7 +35,7 @@
           }
         }
       }, {
-        "value" : "\\\\muse-jenkins-output\\\\examples\\\\",
+        "value" : "muse-jenkins-output/examples/",
         "type" : "string"
       }, {
         "type" : "date-format",
