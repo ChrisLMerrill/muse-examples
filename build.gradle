@@ -10,7 +10,7 @@ repositories
 
 dependencies
     {
-    compile('org.museautomation:muse-core:[0.22,)')
+    compile('org.museautomation:muse-core:[0.27,)')
 
     testCompile 'org.junit.jupiter:junit-jupiter-api:5+'
     }
@@ -38,6 +38,6 @@ tasks.withType(JavaCompile) {
     targetCompatibility = '11'
 }
 wrapper {
-    gradleVersion = '6.0.1'
+    gradleVersion = '6.3'
 }
 
