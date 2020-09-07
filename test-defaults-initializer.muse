@@ -1,17 +1,21 @@
 {
-  "type" : "test-defaults-initializer",
+  "type" : "task-defaults-initializer",
+  "metadata" : {
+    "_filename" : "test-defaults-initializer.muse",
+    "_path" : ""
+  },
   "parameters" : {
     "apply-condition" : {
-      "value" : true,
-      "type" : "boolean"
+      "type" : "boolean",
+      "value" : true
     },
     "auto-apply" : {
-      "value" : true,
-      "type" : "boolean"
+      "type" : "boolean",
+      "value" : true
     },
     "overwrite" : {
-      "value" : false,
-      "type" : "boolean"
+      "type" : "boolean",
+      "value" : false
     }
   },
   "tags" : [ ]

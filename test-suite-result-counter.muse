@@ -1,15 +1,17 @@
 {
-  "type" : "test-suite-result-counter",
+  "type" : "task-suite-result-counter",
+  "metadata" : {
+    "_filename" : "test-suite-result-counter.muse",
+    "_path" : ""
+  },
   "parameters" : {
     "apply-condition" : {
-      "value" : true,
       "type" : "boolean",
-      "sourceList" : [ ]
+      "value" : true
     },
     "auto-apply" : {
-      "value" : true,
       "type" : "boolean",
-      "sourceList" : [ ]
+      "value" : true
     }
   },
   "tags" : [ ]

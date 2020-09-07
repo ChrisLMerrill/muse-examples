@@ -1,66 +1,79 @@
 {
   "type" : "steppedtask",
+  "defaultVariables" : { },
+  "inputSet" : {
+    "list" : [ ]
+  },
+  "metadata" : {
+    "_filename" : "window-operations.muse",
+    "_path" : "",
+    "filename" : "window-operations.muse",
+    "path" : ""
+  },
+  "outputSet" : {
+    "list" : [ ]
+  },
   "step" : {
     "children" : [ {
-      "sources" : {
-        "provider" : {
-          "type" : "resource",
-          "source" : {
-            "value" : "local-providers",
-            "type" : "string"
-          }
-        },
-        "browser" : {
-          "type" : "resource",
-          "source" : {
-            "value" : "firefox",
-            "type" : "string"
-          }
-        }
-      },
       "metadata" : {
         "_id" : 14243678453762
       },
-      "type" : "open-browser"
-    }, {
       "sources" : {
-        "URL" : {
-          "value" : "http://the-internet.herokuapp.com",
-          "type" : "string"
+        "browser" : {
+          "source" : {
+            "type" : "string",
+            "value" : "firefox"
+          },
+          "type" : "resource"
+        },
+        "provider" : {
+          "source" : {
+            "type" : "string",
+            "value" : "local-providers"
+          },
+          "type" : "resource"
         }
       },
+      "type" : "open-browser"
+    }, {
       "metadata" : {
         "_id" : 14243678453763
       },
-      "type" : "goto-url"
-    }, {
       "sources" : {
-        "width" : {
-          "value" : 400,
-          "type" : "integer"
-        },
-        "height" : {
-          "value" : 400,
-          "type" : "integer"
+        "URL" : {
+          "type" : "string",
+          "value" : "http://the-internet.herokuapp.com"
         }
       },
+      "type" : "goto-url"
+    }, {
       "metadata" : {
         "_id" : 14243678453772
       },
-      "type" : "browser-size"
-    }, {
       "sources" : {
-        "x" : {
-          "value" : 1000,
-          "type" : "integer"
+        "height" : {
+          "type" : "integer",
+          "value" : 400
         },
-        "y" : {
-          "value" : 500,
-          "type" : "integer"
+        "width" : {
+          "type" : "integer",
+          "value" : 400
         }
       },
+      "type" : "browser-size"
+    }, {
       "metadata" : {
         "_id" : 14243678453768
+      },
+      "sources" : {
+        "x" : {
+          "type" : "integer",
+          "value" : 1000
+        },
+        "y" : {
+          "type" : "integer",
+          "value" : 500
+        }
       },
       "type" : "browser-position"
     }, {
@@ -74,28 +87,28 @@
       },
       "type" : "browser-fullscreen"
     }, {
-      "sources" : {
-        "element" : {
-          "type" : "element-id",
-          "source" : {
-            "value" : "page-footer",
-            "type" : "string"
-          }
-        }
-      },
       "metadata" : {
         "_id" : 14243678453764
       },
-      "type" : "capture-dom"
-    }, {
       "sources" : {
-        "message" : {
-          "value" : "captured?",
-          "type" : "string"
+        "element" : {
+          "source" : {
+            "type" : "string",
+            "value" : "page-footer"
+          },
+          "type" : "element-id"
         }
       },
+      "type" : "capture-dom"
+    }, {
       "metadata" : {
         "_id" : 14243678453765
+      },
+      "sources" : {
+        "message" : {
+          "type" : "string",
+          "value" : "captured?"
+        }
       },
       "type" : "log-message"
     } ],
@@ -104,25 +117,5 @@
     },
     "type" : "scope"
   },
-  "defaultVariables" : { },
-  "tags" : [ ],
-  "inputStates" : {
-    "typeList" : [ ]
-  },
-  "outputSet" : {
-    "list" : [ ]
-  },
-  "outputStates" : {
-    "typeList" : [ ]
-  },
-  "inputSet" : {
-    "list" : [ ]
-  },
-  "inputs" : {
-    "list" : [ ]
-  },
-  "metadata" : {
-    "path" : "",
-    "filename" : "window-operations.muse"
-  }
+  "tags" : [ ]
 }

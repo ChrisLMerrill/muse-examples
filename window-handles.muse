@@ -1,202 +1,215 @@
 {
   "type" : "steppedtask",
+  "defaultVariables" : { },
+  "inputSet" : {
+    "list" : [ ]
+  },
+  "metadata" : {
+    "_filename" : "window-handles.muse",
+    "_path" : "",
+    "filename" : "window-handles.muse",
+    "path" : ""
+  },
+  "outputSet" : {
+    "list" : [ ]
+  },
   "step" : {
     "children" : [ {
-      "sources" : {
-        "provider" : {
-          "type" : "resource",
-          "source" : {
-            "value" : "local-providers",
-            "type" : "string"
-          }
-        },
-        "browser" : {
-          "type" : "resource",
-          "source" : {
-            "value" : "chrome",
-            "type" : "string"
-          }
-        }
-      },
       "metadata" : {
         "_id" : 15940595548162
       },
-      "type" : "open-browser"
-    }, {
       "sources" : {
-        "URL" : {
-          "value" : "http://apache.org/",
-          "type" : "string"
+        "browser" : {
+          "source" : {
+            "type" : "string",
+            "value" : "chrome"
+          },
+          "type" : "resource"
+        },
+        "provider" : {
+          "source" : {
+            "type" : "string",
+            "value" : "local-providers"
+          },
+          "type" : "resource"
         }
       },
+      "type" : "open-browser"
+    }, {
       "metadata" : {
         "_id" : 15940595548163
       },
+      "sources" : {
+        "URL" : {
+          "type" : "string",
+          "value" : "http://apache.org/"
+        }
+      },
       "type" : "goto-url"
     }, {
+      "metadata" : {
+        "_id" : 15940595548164
+      },
       "sources" : {
         "name" : {
-          "value" : "window1",
-          "type" : "string"
+          "type" : "string",
+          "value" : "window1"
         },
         "value" : {
           "type" : "window-handle"
         }
       },
-      "metadata" : {
-        "_id" : 15940595548164
-      },
       "type" : "store-variable"
     }, {
-      "sources" : {
-        "handle" : {
-          "value" : "window2",
-          "type" : "string"
-        }
-      },
       "metadata" : {
         "_id" : 15940595548165
       },
-      "type" : "new-window"
-    }, {
       "sources" : {
-        "URL" : {
-          "value" : "http://github.com/",
-          "type" : "string"
+        "handle" : {
+          "type" : "string",
+          "value" : "window2"
         }
       },
+      "type" : "new-window"
+    }, {
       "metadata" : {
         "_id" : 15940595548171
       },
-      "type" : "goto-url"
-    }, {
       "sources" : {
-        "target" : {
-          "type" : "variable",
-          "source" : {
-            "value" : "window1",
-            "type" : "string"
-          }
+        "URL" : {
+          "type" : "string",
+          "value" : "http://github.com/"
         }
       },
+      "type" : "goto-url"
+    }, {
       "metadata" : {
         "_id" : 15940595548172
       },
-      "type" : "switch-to-window"
-    }, {
       "sources" : {
-        "element" : {
-          "type" : "element-linktext",
+        "target" : {
           "source" : {
-            "value" : "News",
-            "type" : "string"
-          }
+            "type" : "string",
+            "value" : "window1"
+          },
+          "type" : "variable"
         }
       },
+      "type" : "switch-to-window"
+    }, {
       "metadata" : {
         "_id" : 15940595548175
       },
-      "type" : "click-element"
-    }, {
       "sources" : {
-        "handle" : {
-          "value" : "window3",
-          "type" : "string"
+        "element" : {
+          "source" : {
+            "type" : "string",
+            "value" : "News"
+          },
+          "type" : "element-linktext"
         }
       },
+      "type" : "click-element"
+    }, {
       "children" : [ {
+        "metadata" : {
+          "_id" : 15940595548180
+        },
         "sources" : {
           "arguments" : {
             "type" : "list"
           },
           "script" : {
-            "value" : "window.open('http://fontawesome.io/');",
-            "type" : "string"
+            "type" : "string",
+            "value" : "window.open('http://fontawesome.io/');"
           }
-        },
-        "metadata" : {
-          "_id" : 15940595548180
         },
         "type" : "execute-js"
       } ],
       "metadata" : {
         "_id" : 15940595548179
       },
-      "type" : "capture-new-window"
-    }, {
       "sources" : {
-        "target" : {
-          "type" : "variable",
-          "source" : {
-            "value" : "window2",
-            "type" : "string"
-          }
+        "handle" : {
+          "type" : "string",
+          "value" : "window3"
         }
       },
+      "type" : "capture-new-window"
+    }, {
       "metadata" : {
         "_id" : 15940595548174
       },
-      "type" : "switch-to-window"
-    }, {
       "sources" : {
-        "element" : {
-          "type" : "element-xpath",
+        "target" : {
           "source" : {
-            "value" : "//a[@href='/login']",
-            "type" : "string"
-          }
+            "type" : "string",
+            "value" : "window2"
+          },
+          "type" : "variable"
         }
       },
+      "type" : "switch-to-window"
+    }, {
       "metadata" : {
         "_id" : 15940595548177
       },
-      "type" : "click-element"
-    }, {
       "sources" : {
-        "keys" : {
-          "value" : "username",
-          "type" : "string"
-        },
         "element" : {
-          "type" : "element-name",
           "source" : {
-            "value" : "login",
-            "type" : "string"
-          }
+            "type" : "string",
+            "value" : "//a[@href='/login']"
+          },
+          "type" : "element-xpath"
         }
       },
+      "type" : "click-element"
+    }, {
       "metadata" : {
         "_id" : 15940595548176
       },
-      "type" : "send-keys"
-    }, {
       "sources" : {
-        "target" : {
-          "type" : "variable",
+        "element" : {
           "source" : {
-            "value" : "window3",
-            "type" : "string"
-          }
+            "type" : "string",
+            "value" : "login"
+          },
+          "type" : "element-name"
+        },
+        "keys" : {
+          "type" : "string",
+          "value" : "username"
         }
       },
+      "type" : "send-keys"
+    }, {
       "metadata" : {
         "_id" : 15940595548182
       },
+      "sources" : {
+        "target" : {
+          "source" : {
+            "type" : "string",
+            "value" : "window3"
+          },
+          "type" : "variable"
+        }
+      },
       "type" : "switch-to-window"
     }, {
+      "metadata" : {
+        "_id" : 15940595548183
+      },
       "sources" : {
         "message" : {
           "sourceList" : [ {
-            "value" : "Now on window",
-            "type" : "string"
+            "type" : "string",
+            "value" : "Now on window"
           }, {
             "type" : "window-handle"
           } ],
           "type" : "add"
         }
-      },
-      "metadata" : {
-        "_id" : 15940595548183
       },
       "type" : "log-message"
     }, {
@@ -205,39 +218,9 @@
       },
       "type" : "close-window"
     }, {
-      "sources" : {
-        "target" : {
-          "sourceMap" : {
-            "selector" : {
-              "value" : 0,
-              "type" : "integer"
-            },
-            "collection" : {
-              "type" : "window-handles"
-            }
-          },
-          "type" : "get-item"
-        }
-      },
       "metadata" : {
         "_id" : 15940595548187
       },
-      "type" : "switch-to-window"
-    }, {
-      "sources" : {
-        "element" : {
-          "type" : "element-linktext",
-          "source" : {
-            "value" : "Attic",
-            "type" : "string"
-          }
-        }
-      },
-      "metadata" : {
-        "_id" : 15940595548186
-      },
-      "type" : "click-element"
-    }, {
       "sources" : {
         "target" : {
           "sourceMap" : {
@@ -245,40 +228,70 @@
               "type" : "window-handles"
             },
             "selector" : {
-              "value" : 1,
-              "type" : "integer"
+              "type" : "integer",
+              "value" : 0
             }
           },
           "type" : "get-item"
         }
       },
-      "metadata" : {
-        "_id" : 15940595548189
-      },
       "type" : "switch-to-window"
     }, {
+      "metadata" : {
+        "_id" : 15940595548186
+      },
       "sources" : {
         "element" : {
-          "type" : "element-linktext",
           "source" : {
-            "value" : "Terms",
-            "type" : "string"
-          }
+            "type" : "string",
+            "value" : "Attic"
+          },
+          "type" : "element-linktext"
         }
-      },
-      "metadata" : {
-        "_id" : 15940595548190
       },
       "type" : "click-element"
     }, {
+      "metadata" : {
+        "_id" : 15940595548189
+      },
       "sources" : {
-        "message" : {
-          "value" : "windows handling example complete!",
-          "type" : "string"
+        "target" : {
+          "sourceMap" : {
+            "collection" : {
+              "type" : "window-handles"
+            },
+            "selector" : {
+              "type" : "integer",
+              "value" : 1
+            }
+          },
+          "type" : "get-item"
         }
       },
+      "type" : "switch-to-window"
+    }, {
+      "metadata" : {
+        "_id" : 15940595548190
+      },
+      "sources" : {
+        "element" : {
+          "source" : {
+            "type" : "string",
+            "value" : "Terms"
+          },
+          "type" : "element-linktext"
+        }
+      },
+      "type" : "click-element"
+    }, {
       "metadata" : {
         "_id" : 15940595548161
+      },
+      "sources" : {
+        "message" : {
+          "type" : "string",
+          "value" : "windows handling example complete!"
+        }
       },
       "type" : "log-message"
     } ],
@@ -287,25 +300,5 @@
     },
     "type" : "scope"
   },
-  "defaultVariables" : { },
-  "tags" : [ ],
-  "inputStates" : {
-    "typeList" : [ ]
-  },
-  "outputSet" : {
-    "list" : [ ]
-  },
-  "outputStates" : {
-    "typeList" : [ ]
-  },
-  "inputSet" : {
-    "list" : [ ]
-  },
-  "inputs" : {
-    "list" : [ ]
-  },
-  "metadata" : {
-    "path" : "",
-    "filename" : "window-handles.muse"
-  }
+  "tags" : [ ]
 }

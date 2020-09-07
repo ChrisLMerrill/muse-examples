@@ -1,15 +1,17 @@
 {
-  "type" : "test-result-collector",
+  "type" : "task-result-collector",
+  "metadata" : {
+    "_filename" : "test-result-calculator.muse",
+    "_path" : ""
+  },
   "parameters" : {
     "apply-condition" : {
-      "value" : true,
       "type" : "boolean",
-      "sourceList" : [ ]
+      "value" : true
     },
     "auto-apply" : {
-      "value" : false,
       "type" : "boolean",
-      "sourceList" : [ ]
+      "value" : false
     }
   },
   "tags" : [ ]

@@ -1,128 +1,138 @@
 {
-  "type" : "steppedtest",
+  "type" : "steppedtask",
+  "defaultVariables" : { },
+  "inputSet" : {
+    "list" : [ ]
+  },
+  "metadata" : {
+    "_filename" : "list-iteration.muse",
+    "_path" : ""
+  },
+  "outputSet" : {
+    "list" : [ ]
+  },
   "step" : {
-    "type" : "scope",
     "children" : [ {
-      "type" : "store-variable",
-      "sources" : {
-        "name" : {
-          "value" : "list",
-          "type" : "string"
-        },
-        "value" : {
-          "type" : "list",
-          "sourceList" : [ {
-            "value" : "abc",
-            "type" : "string"
-          }, {
-            "value" : "def",
-            "type" : "string"
-          }, {
-            "value" : "xyz",
-            "type" : "string"
-          } ]
-        }
-      },
       "metadata" : {
         "_id" : 92625388831166
-      }
-    }, {
-      "type" : "store-variable",
+      },
       "sources" : {
         "name" : {
-          "value" : "index",
-          "type" : "string"
+          "type" : "string",
+          "value" : "list"
         },
         "value" : {
-          "value" : 0,
-          "type" : "integer"
+          "sourceList" : [ {
+            "type" : "string",
+            "value" : "abc"
+          }, {
+            "type" : "string",
+            "value" : "def"
+          }, {
+            "type" : "string",
+            "value" : "xyz"
+          } ],
+          "type" : "list"
         }
       },
+      "type" : "store-variable"
+    }, {
       "metadata" : {
         "_id" : 92625388831164
-      }
-    }, {
-      "type" : "while",
-      "children" : [ {
-        "type" : "log-message",
-        "sources" : {
-          "message" : {
-            "type" : "get-item",
-            "sourceMap" : {
-              "selector" : {
-                "type" : "variable",
-                "source" : {
-                  "value" : "index",
-                  "type" : "string"
-                }
-              },
-              "collection" : {
-                "type" : "variable",
-                "source" : {
-                  "value" : "list",
-                  "type" : "string"
-                }
-              }
-            }
-          }
-        },
-        "metadata" : {
-          "_id" : 92625388831359
-        }
-      }, {
-        "type" : "increment-variable",
-        "sources" : {
-          "amount" : {
-            "value" : 1,
-            "type" : "integer"
-          },
-          "name" : {
-            "value" : "index",
-            "type" : "string"
-          }
-        },
-        "metadata" : {
-          "_id" : 92625388831168
-        }
-      } ],
+      },
       "sources" : {
-        "condition" : {
-          "type" : "lessthan",
-          "sourceMap" : {
-            "left" : {
-              "type" : "variable",
-              "source" : {
-                "value" : "index",
-                "type" : "string"
-              }
-            },
-            "right" : {
-              "type" : "property",
-              "sourceMap" : {
-                "name" : {
-                  "value" : "size",
-                  "type" : "string"
-                },
-                "target" : {
-                  "type" : "variable",
-                  "source" : {
-                    "value" : "list",
-                    "type" : "string"
-                  }
-                }
-              }
-            }
-          }
+        "name" : {
+          "type" : "string",
+          "value" : "index"
+        },
+        "value" : {
+          "type" : "integer",
+          "value" : 0
         }
       },
+      "type" : "store-variable"
+    }, {
+      "children" : [ {
+        "metadata" : {
+          "_id" : 92625388831359
+        },
+        "sources" : {
+          "message" : {
+            "sourceMap" : {
+              "collection" : {
+                "source" : {
+                  "type" : "string",
+                  "value" : "list"
+                },
+                "type" : "variable"
+              },
+              "selector" : {
+                "source" : {
+                  "type" : "string",
+                  "value" : "index"
+                },
+                "type" : "variable"
+              }
+            },
+            "type" : "get-item"
+          }
+        },
+        "type" : "log-message"
+      }, {
+        "metadata" : {
+          "_id" : 92625388831168
+        },
+        "sources" : {
+          "amount" : {
+            "type" : "integer",
+            "value" : 1
+          },
+          "name" : {
+            "type" : "string",
+            "value" : "index"
+          }
+        },
+        "type" : "increment-variable"
+      } ],
       "metadata" : {
         "_id" : 92625388831165
-      }
+      },
+      "sources" : {
+        "condition" : {
+          "sourceMap" : {
+            "left" : {
+              "source" : {
+                "type" : "string",
+                "value" : "index"
+              },
+              "type" : "variable"
+            },
+            "right" : {
+              "sourceMap" : {
+                "name" : {
+                  "type" : "string",
+                  "value" : "size"
+                },
+                "target" : {
+                  "source" : {
+                    "type" : "string",
+                    "value" : "list"
+                  },
+                  "type" : "variable"
+                }
+              },
+              "type" : "property"
+            }
+          },
+          "type" : "lessthan"
+        }
+      },
+      "type" : "while"
     } ],
     "metadata" : {
       "_id" : 92625388831162
-    }
+    },
+    "type" : "scope"
   },
-  "defaultVariables" : { },
   "tags" : [ ]
 }

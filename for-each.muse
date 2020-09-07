@@ -1,69 +1,69 @@
 {
   "type" : "steppedtask",
-  "step" : {
-    "type" : "scope",
-    "children" : [ {
-      "type" : "foreach",
-      "children" : [ {
-        "type" : "log-message",
-        "sources" : {
-          "message" : {
-            "type" : "add",
-            "sourceList" : [ {
-              "value" : "index=",
-              "type" : "string"
-            }, {
-              "type" : "variable",
-              "source" : {
-                "value" : "index",
-                "type" : "string"
-              }
-            } ]
-          }
-        },
-        "metadata" : {
-          "_id" : 92625388831705
-        }
-      } ],
-      "sources" : {
-        "name" : {
-          "value" : "index",
-          "type" : "string"
-        },
-        "list" : {
-          "type" : "list",
-          "sourceList" : [ {
-            "value" : 1,
-            "type" : "integer"
-          }, {
-            "value" : 2,
-            "type" : "integer"
-          }, {
-            "value" : 3,
-            "type" : "integer"
-          } ]
-        }
-      },
-      "metadata" : {
-        "_id" : 92625388831704
-      }
-    } ],
-    "metadata" : {
-      "_id" : 92625388831379
-    }
-  },
   "defaultVariables" : { },
   "inputSet" : {
     "list" : [ ]
   },
+  "metadata" : {
+    "_filename" : "for-each.muse",
+    "_path" : "",
+    "filename" : "for-each.muse",
+    "path" : ""
+  },
   "outputSet" : {
     "list" : [ ]
   },
-  "tags" : [ ],
-  "metadata" : {
-    "path" : "",
-    "filename" : "for-each.muse",
-    "_path" : "",
-    "_filename" : "for-each.muse"
-  }
+  "step" : {
+    "children" : [ {
+      "children" : [ {
+        "metadata" : {
+          "_id" : 92625388831705
+        },
+        "sources" : {
+          "message" : {
+            "sourceList" : [ {
+              "type" : "string",
+              "value" : "index="
+            }, {
+              "source" : {
+                "type" : "string",
+                "value" : "index"
+              },
+              "type" : "variable"
+            } ],
+            "type" : "add"
+          }
+        },
+        "type" : "log-message"
+      } ],
+      "metadata" : {
+        "_id" : 92625388831704
+      },
+      "sources" : {
+        "list" : {
+          "sourceList" : [ {
+            "type" : "integer",
+            "value" : 1
+          }, {
+            "type" : "integer",
+            "value" : 2
+          }, {
+            "type" : "integer",
+            "value" : 3
+          } ],
+          "type" : "list"
+        },
+        "name" : {
+          "type" : "string",
+          "value" : "index"
+        }
+      },
+      "type" : "foreach"
+    } ],
+    "metadata" : {
+      "_id" : 92625388831379
+    },
+    "type" : "scope"
+  },
+  "tags" : [ ]
 }

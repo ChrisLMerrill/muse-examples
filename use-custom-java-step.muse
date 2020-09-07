@@ -1,32 +1,41 @@
 {
-  "type" : "steppedtest",
+  "type" : "steppedtask",
+  "defaultVariables" : { },
+  "inputSet" : {
+    "list" : [ ]
+  },
+  "metadata" : {
+    "_filename" : "use-custom-java-step.muse",
+    "_path" : ""
+  },
+  "outputSet" : {
+    "list" : [ ]
+  },
   "step" : {
-    "type" : "compound",
     "children" : [ {
-      "type" : "log-params",
       "metadata" : {
-        "id" : 92625388830740
+        "_id" : 92625388830740
       },
       "sources" : {
         "abc" : {
-          "value" : "aaa",
-          "type" : "string"
+          "type" : "string",
+          "value" : "aaa"
         },
         "def" : {
-          "value" : 123,
-          "type" : "integer"
+          "type" : "integer",
+          "value" : 123
         },
         "ghi" : {
-          "value" : true,
-          "type" : "boolean"
+          "type" : "boolean",
+          "value" : true
         }
-      }
+      },
+      "type" : "log-params"
     } ],
     "metadata" : {
-      "description" : null,
-      "id" : 92625388830738
-    }
+      "_id" : 92625388830738
+    },
+    "type" : "compound"
   },
-  "defaultVariables" : { },
   "tags" : [ ]
 }

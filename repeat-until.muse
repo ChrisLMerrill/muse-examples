@@ -1,86 +1,94 @@
 {
   "type" : "steppedtask",
+  "defaultVariables" : { },
+  "inputSet" : {
+    "list" : [ ]
+  },
+  "metadata" : {
+    "_filename" : "repeat-until.muse",
+    "_path" : "",
+    "filename" : "repeat-until.json",
+    "path" : ""
+  },
+  "outputSet" : {
+    "list" : [ ]
+  },
   "step" : {
-    "type" : "scope",
     "children" : [ {
-      "type" : "store-variable",
       "metadata" : {
         "_id" : 92625388831410
       },
       "sources" : {
         "name" : {
-          "value" : "x",
-          "type" : "string"
+          "type" : "string",
+          "value" : "x"
         },
         "value" : {
-          "value" : 1,
-          "type" : "integer"
+          "type" : "integer",
+          "value" : 1
         }
-      }
+      },
+      "type" : "store-variable"
     }, {
-      "type" : "repeat-until",
       "children" : [ {
-        "type" : "log-message",
         "metadata" : {
           "_id" : 92625388831413
         },
         "sources" : {
           "message" : {
-            "type" : "add",
             "sourceList" : [ {
-              "value" : "x=",
-              "type" : "string"
+              "type" : "string",
+              "value" : "x="
             }, {
-              "type" : "variable",
               "source" : {
-                "value" : "x",
-                "type" : "string"
-              }
-            } ]
+                "type" : "string",
+                "value" : "x"
+              },
+              "type" : "variable"
+            } ],
+            "type" : "add"
           }
-        }
+        },
+        "type" : "log-message"
       }, {
-        "type" : "increment-variable",
         "metadata" : {
           "_id" : 92625388831412
         },
         "sources" : {
           "name" : {
-            "value" : "x",
-            "type" : "string"
+            "type" : "string",
+            "value" : "x"
           }
-        }
+        },
+        "type" : "increment-variable"
       } ],
       "metadata" : {
         "_id" : 92625388831411
       },
       "sources" : {
         "condition" : {
-          "type" : "greaterthan",
           "sourceMap" : {
             "left" : {
-              "type" : "variable",
               "source" : {
-                "value" : "x",
-                "type" : "string"
-              }
+                "type" : "string",
+                "value" : "x"
+              },
+              "type" : "variable"
             },
             "right" : {
-              "value" : 4,
-              "type" : "integer"
+              "type" : "integer",
+              "value" : 4
             }
-          }
+          },
+          "type" : "greaterthan"
         }
-      }
+      },
+      "type" : "repeat-until"
     } ],
     "metadata" : {
       "_id" : 92625388831379
-    }
+    },
+    "type" : "scope"
   },
-  "defaultVariables" : { },
-  "tags" : [ ],
-  "metadata" : {
-    "path" : "",
-    "filename" : "repeat-until.json"
-  }
+  "tags" : [ ]
 }

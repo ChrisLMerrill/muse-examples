@@ -1,18 +1,18 @@
 {
   "type" : "save-results-to-disk",
+  "metadata" : {
+    "_filename" : "test-results-saver.muse",
+    "_path" : ""
+  },
   "parameters" : {
     "apply-condition" : {
-      "value" : true,
-      "type" : "boolean"
+      "type" : "boolean",
+      "value" : true
     },
     "auto-apply" : {
-      "value" : false,
-      "type" : "boolean"
+      "type" : "boolean",
+      "value" : false
     }
-  },
-  "metadata" : {
-    "_path" : "",
-    "_filename" : "test-results-saver.muse"
   },
   "tags" : [ ]
 }

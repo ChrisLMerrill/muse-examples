@@ -2,8 +2,12 @@
   "type" : "selenium-capabilities",
   "capabilities" : {
     "browserName" : "firefox",
-    "version" : "",
-    "platform" : "ANY"
+    "platform" : "ANY",
+    "version" : ""
+  },
+  "metadata" : {
+    "_filename" : "firefox.muse",
+    "_path" : ""
   },
   "tags" : [ ]
 }

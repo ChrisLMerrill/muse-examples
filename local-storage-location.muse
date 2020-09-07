@@ -1,38 +1,38 @@
 {
   "type" : "local-storage-location",
+  "metadata" : {
+    "_filename" : "local-storage-location.muse",
+    "_path" : ""
+  },
   "parameters" : {
     "apply-condition" : {
-      "value" : true,
-      "type" : "boolean"
+      "type" : "boolean",
+      "value" : true
     },
     "auto-apply" : {
-      "value" : false,
-      "type" : "boolean"
+      "type" : "boolean",
+      "value" : false
     },
     "base-param" : {
-      "type" : "variable",
       "source" : {
-        "value" : "output_path",
-        "type" : "string"
+        "type" : "string",
+        "value" : "output_path"
       },
       "sourceMap" : {
         "name" : {
-          "value" : "output_path",
-          "type" : "string"
+          "type" : "string",
+          "value" : "output_path"
         },
         "target" : {
-          "type" : "sysvar",
           "source" : {
-            "value" : "clo",
-            "type" : "string"
-          }
+            "type" : "string",
+            "value" : "clo"
+          },
+          "type" : "sysvar"
         }
-      }
+      },
+      "type" : "variable"
     }
-  },
-  "metadata" : {
-    "_path" : "",
-    "_filename" : "local-storage-location.muse"
   },
   "tags" : [ ]
 }

@@ -1,22 +1,24 @@
 {
   "type" : "event-logger-plugin",
+  "metadata" : {
+    "_filename" : "event-logger.muse",
+    "_path" : "",
+    "filename" : "event-logger.muse",
+    "path" : ""
+  },
   "parameters" : {
     "apply-condition" : {
-      "value" : true,
-      "type" : "boolean"
+      "type" : "boolean",
+      "value" : true
     },
     "auto-apply" : {
-      "value" : false,
-      "type" : "boolean"
+      "type" : "boolean",
+      "value" : false
     },
     "log-to-stdout" : {
-      "value" : true,
-      "type" : "boolean"
+      "type" : "boolean",
+      "value" : true
     }
   },
-  "tags" : [ ],
-  "metadata" : {
-    "path" : "",
-    "filename" : "event-logger.muse"
-  }
+  "tags" : [ ]
 }

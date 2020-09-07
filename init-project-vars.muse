@@ -1,47 +1,51 @@
 {
   "type" : "variable-list-initializer",
+  "metadata" : {
+    "_filename" : "init-project-vars.muse",
+    "_path" : ""
+  },
   "parameters" : {
-    "listid" : {
-      "value" : "project-vars",
-      "type" : "string"
-    },
     "apply-condition" : {
-      "value" : true,
-      "type" : "boolean",
       "sourceMap" : {
         "left" : {
-          "type" : "property",
           "sourceMap" : {
             "name" : {
-              "value" : "JOB_NAME",
-              "type" : "string"
+              "type" : "string",
+              "value" : "JOB_NAME"
             },
             "target" : {
-              "type" : "property",
               "sourceMap" : {
                 "name" : {
-                  "value" : "vars",
-                  "type" : "string"
+                  "type" : "string",
+                  "value" : "vars"
                 },
                 "target" : {
-                  "type" : "sysvar",
                   "source" : {
-                    "value" : "env",
-                    "type" : "string"
-                  }
+                    "type" : "string",
+                    "value" : "env"
+                  },
+                  "type" : "sysvar"
                 }
-              }
+              },
+              "type" : "property"
             }
-          }
+          },
+          "type" : "property"
         },
         "right" : {
           "type" : "null"
         }
-      }
+      },
+      "type" : "boolean",
+      "value" : true
     },
     "auto-apply" : {
-      "value" : false,
-      "type" : "boolean"
+      "type" : "boolean",
+      "value" : false
+    },
+    "listid" : {
+      "type" : "string",
+      "value" : "project-vars"
     }
   },
   "tags" : [ ]

@@ -2,8 +2,12 @@
   "type" : "selenium-capabilities",
   "capabilities" : {
     "browserName" : "chrome",
-    "version" : "ANY",
-    "platform" : "ANY"
+    "platform" : "ANY",
+    "version" : "ANY"
+  },
+  "metadata" : {
+    "_filename" : "chrome.muse",
+    "_path" : ""
   },
   "tags" : [ ]
 }

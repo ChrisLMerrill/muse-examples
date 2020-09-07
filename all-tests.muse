@@ -1,5 +1,9 @@
 {
   "type" : "suite_of_ids",
-  "testIds" : [ "use-custom-javascript-step", "login-tests", "use-custom-java-step" ],
-  "tags" : [ ]
+  "metadata" : {
+    "_filename" : "all-tests.muse",
+    "_path" : ""
+  },
+  "tags" : [ ],
+  "taskIds" : [ "use-custom-javascript-step", "login-tests", "use-custom-java-step" ]
 }

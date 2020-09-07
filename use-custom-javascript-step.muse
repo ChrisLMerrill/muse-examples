@@ -1,105 +1,114 @@
 {
-  "type" : "steppedtest",
+  "type" : "steppedtask",
+  "defaultVariables" : { },
+  "inputSet" : {
+    "list" : [ ]
+  },
+  "metadata" : {
+    "_filename" : "use-custom-javascript-step.muse",
+    "_path" : ""
+  },
+  "outputSet" : {
+    "list" : [ ]
+  },
   "step" : {
-    "type" : "compound",
     "children" : [ {
-      "type" : "store-variable",
       "metadata" : {
-        "id" : 92625388830742
+        "_id" : 92625388830742
       },
       "sources" : {
         "name" : {
-          "value" : "string1",
-          "type" : "string"
+          "type" : "string",
+          "value" : "string1"
         },
         "value" : {
-          "value" : "value1",
-          "type" : "string"
+          "type" : "string",
+          "value" : "value1"
         }
-      }
+      },
+      "type" : "store-variable"
     }, {
-      "type" : "store-variable",
       "metadata" : {
-        "id" : 92625388830747
+        "_id" : 92625388830747
       },
       "sources" : {
         "name" : {
-          "value" : "int1",
-          "type" : "string"
+          "type" : "string",
+          "value" : "int1"
         },
         "value" : {
-          "value" : 17,
-          "type" : "integer"
+          "type" : "integer",
+          "value" : 17
         }
-      }
+      },
+      "type" : "store-variable"
     }, {
-      "type" : "example-js-step",
       "metadata" : {
-        "id" : 92625388830744
+        "_id" : 92625388830744
       },
       "sources" : {
         "abc" : {
-          "value" : "aaa",
-          "type" : "string"
+          "type" : "string",
+          "value" : "aaa"
         },
         "xyz" : {
-          "value" : true,
-          "type" : "boolean"
+          "type" : "boolean",
+          "value" : true
         }
-      }
+      },
+      "type" : "example-js-step"
     }, {
-      "type" : "verify",
       "metadata" : {
-        "id" : 92625388830745
+        "_id" : 92625388830745
       },
       "sources" : {
         "condition" : {
-          "type" : "equals",
           "sourceMap" : {
             "left" : {
-              "type" : "variable",
               "source" : {
-                "value" : "string1",
-                "type" : "string"
-              }
+                "type" : "string",
+                "value" : "string1"
+              },
+              "type" : "variable"
             },
             "right" : {
-              "value" : "value1+aaa",
-              "type" : "string"
+              "type" : "string",
+              "value" : "value1+aaa"
             }
-          }
+          },
+          "type" : "equals"
         }
-      }
+      },
+      "type" : "verify"
     }, {
-      "type" : "verify",
       "metadata" : {
-        "id" : 92625388830746
+        "_id" : 92625388830746
       },
       "sources" : {
         "condition" : {
-          "type" : "equals",
           "sourceMap" : {
             "left" : {
-              "type" : "variable",
               "source" : {
-                "value" : "int1",
-                "type" : "string"
-              }
+                "type" : "string",
+                "value" : "int1"
+              },
+              "type" : "variable"
             },
             "right" : {
-              "value" : 34,
-              "type" : "integer"
+              "type" : "integer",
+              "value" : 34
             }
-          }
+          },
+          "type" : "equals"
         }
-      }
+      },
+      "type" : "verify"
     } ],
     "metadata" : {
-      "description" : null,
-      "id" : 92625388830741
+      "_id" : 92625388830741
     },
-    "sources" : { }
+    "sources" : { },
+    "type" : "compound"
   },
-  "defaultVariables" : { },
   "tags" : [ ]
 }
