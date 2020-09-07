@@ -9,6 +9,10 @@
       "type" : "boolean",
       "value" : true
     },
+    "attachment-lines" : {
+      "type" : "boolean",
+      "value" : true
+    },
     "auto-apply" : {
       "type" : "boolean",
       "value" : false
