@@ -1,33 +1,66 @@
 {
   "type" : "webdriver-provider-list",
+  "metadata" : {
+    "_filename" : "local-provider.muse",
+    "_path" : "",
+    "filename" : "local-provider.json",
+    "path" : ""
+  },
   "providers" : [ {
     "type" : "firefox-marionette-provider",
+    "argumentSource" : {
+      "source" : {
+        "type" : "string",
+        "value" : "browser-args"
+      },
+      "type" : "variable"
+    },
     "os" : "Windows",
     "relativePath" : "webdrivers/geckodriver/0.26.0/geckodriver_win64.exe"
   }, {
     "type" : "chromedriver-provider",
+    "argumentSource" : {
+      "source" : {
+        "type" : "string",
+        "value" : "browser-args"
+      },
+      "type" : "variable"
+    },
     "os" : "Windows",
-    "relativePath" : "webdrivers/chromedriver/83.0.4103.39/chromedriver.exe"
+    "relativePath" : "webdrivers/chromedriver/84.0.4147.30/chromedriver.exe"
   }, {
     "type" : "firefox-marionette-provider",
-    "arguments" : [ "-headless" ],
+    "argumentSource" : {
+      "source" : {
+        "type" : "string",
+        "value" : "browser-args"
+      },
+      "type" : "variable"
+    },
     "os" : "Linux",
     "relativePath" : "webdrivers/geckodriver/0.26.0/geckodriver_linux64"
   }, {
     "type" : "chromedriver-provider",
+    "argumentSource" : {
+      "source" : {
+        "type" : "string",
+        "value" : "browser-args"
+      },
+      "type" : "variable"
+    },
     "os" : "macOS",
-    "relativePath" : "webdrivers/chromedriver/83.0.4103.39/chromedriver_mac64"
+    "relativePath" : "webdrivers/chromedriver/84.0.4147.30/chromedriver_mac64"
   }, {
     "type" : "chromedriver-provider",
-    "arguments" : [ "-headless" ],
+    "argumentSource" : {
+      "source" : {
+        "type" : "string",
+        "value" : "browser-args"
+      },
+      "type" : "variable"
+    },
     "os" : "Linux",
-    "relativePath" : "webdrivers/chromedriver/83.0.4103.39/chromedriver_linux64"
+    "relativePath" : "webdrivers/chromedriver/84.0.4147.30/chromedriver_linux64"
   } ],
-  "tags" : [ ],
-  "metadata" : {
-    "path" : "",
-    "filename" : "local-provider.json",
-    "_path" : "",
-    "_filename" : "local-provider.muse"
-  }
+  "tags" : [ ]
 }
