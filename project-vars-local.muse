@@ -1,52 +1,55 @@
 {
   "type" : "variables",
+  "metadata" : {
+    "_filename" : "project-vars-local.muse",
+    "_path" : ""
+  },
+  "tags" : [ ],
   "variables" : {
+    "browser-args" : {
+      "type" : "null"
+    },
     "output_path" : {
-      "type" : "add",
       "sourceList" : [ {
-        "type" : "property",
         "sourceMap" : {
           "name" : {
-            "value" : "java.io.tmpdir",
-            "type" : "string"
+            "type" : "string",
+            "value" : "java.io.tmpdir"
           },
           "target" : {
-            "type" : "property",
             "sourceMap" : {
               "name" : {
-                "value" : "props",
-                "type" : "string"
+                "type" : "string",
+                "value" : "props"
               },
               "target" : {
-                "type" : "sysvar",
                 "source" : {
-                  "value" : "env",
-                  "type" : "string"
-                }
+                  "type" : "string",
+                  "value" : "env"
+                },
+                "type" : "sysvar"
               }
-            }
+            },
+            "type" : "property"
           }
-        }
+        },
+        "type" : "property"
       }, {
-        "value" : "muse-output/examples/",
-        "type" : "string"
+        "type" : "string",
+        "value" : "muse-output/examples/"
       }, {
-        "type" : "date-format",
         "sourceMap" : {
           "date" : {
             "type" : "null"
           },
           "format" : {
-            "value" : "yyyy.MMM.dd - hh.mm.ss.SSS aaa",
-            "type" : "string"
+            "type" : "string",
+            "value" : "yyyy.MMM.dd - hh.mm.ss.SSS aaa"
           }
-        }
-      } ]
+        },
+        "type" : "date-format"
+      } ],
+      "type" : "add"
     }
-  },
-  "metadata" : {
-    "_path" : "",
-    "_filename" : "project-vars-local.muse"
-  },
-  "tags" : [ ]
+  }
 }

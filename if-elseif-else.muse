@@ -1,153 +1,159 @@
 {
-  "type" : "steppedtest",
+  "type" : "steppedtask",
   "defaultVariables" : { },
+  "inputSet" : {
+    "list" : [ ]
+  },
+  "metadata" : {
+    "_filename" : "if-elseif-else.muse",
+    "_path" : ""
+  },
+  "outputSet" : {
+    "list" : [ ]
+  },
   "step" : {
-    "type" : "scope",
     "children" : [ {
-      "type" : "store-variable",
+      "metadata" : {
+        "_id" : 92625388831714
+      },
       "sources" : {
         "name" : {
-          "value" : "counter",
-          "type" : "string"
+          "type" : "string",
+          "value" : "counter"
         },
         "value" : {
-          "value" : 2,
-          "type" : "integer"
+          "type" : "integer",
+          "value" : 2
         }
       },
-      "metadata" : {
-        "_id" : 92625388831656
-      }
+      "type" : "store-variable"
     }, {
-      "type" : "if",
       "children" : [ {
-        "type" : "log-message",
-        "sources" : {
-          "message" : {
-            "value" : "counter is one",
-            "type" : "string"
-          }
-        },
         "metadata" : {
           "_id" : 92625388831658
-        }
-      } ],
-      "sources" : {
-        "condition" : {
-          "type" : "equals",
-          "sourceMap" : {
-            "left" : {
-              "type" : "variable",
-              "source" : {
-                "value" : "counter",
-                "type" : "string"
-              }
-            },
-            "right" : {
-              "value" : 1,
-              "type" : "integer"
-            }
+        },
+        "sources" : {
+          "message" : {
+            "type" : "string",
+            "value" : "counter is one"
           }
-        }
-      },
+        },
+        "type" : "log-message"
+      } ],
       "metadata" : {
         "_id" : 92625388831657
-      }
+      },
+      "sources" : {
+        "condition" : {
+          "sourceMap" : {
+            "left" : {
+              "source" : {
+                "type" : "string",
+                "value" : "counter"
+              },
+              "type" : "variable"
+            },
+            "right" : {
+              "type" : "integer",
+              "value" : 1
+            }
+          },
+          "type" : "equals"
+        }
+      },
+      "type" : "if"
     }, {
-      "type" : "else-if",
       "children" : [ {
-        "type" : "log-message",
-        "sources" : {
-          "message" : {
-            "value" : "counter is two",
-            "type" : "string"
-          }
-        },
         "metadata" : {
           "_id" : 92625388831661
-        }
-      } ],
-      "sources" : {
-        "condition" : {
-          "type" : "equals",
-          "sourceMap" : {
-            "left" : {
-              "type" : "variable",
-              "source" : {
-                "value" : "counter",
-                "type" : "string"
-              }
-            },
-            "right" : {
-              "value" : 2,
-              "type" : "integer"
-            }
+        },
+        "sources" : {
+          "message" : {
+            "type" : "string",
+            "value" : "counter is two"
           }
-        }
-      },
+        },
+        "type" : "log-message"
+      } ],
       "metadata" : {
         "_id" : 92625388831659
-      }
-    }, {
-      "type" : "else-if",
-      "children" : [ {
-        "type" : "log-message",
-        "sources" : {
-          "message" : {
-            "value" : "counter is three",
-            "type" : "string"
-          }
-        },
-        "metadata" : {
-          "_id" : 92625388831668
-        }
-      } ],
+      },
       "sources" : {
         "condition" : {
-          "type" : "equals",
           "sourceMap" : {
             "left" : {
-              "type" : "variable",
               "source" : {
-                "value" : "counter",
-                "type" : "string"
-              }
+                "type" : "string",
+                "value" : "counter"
+              },
+              "type" : "variable"
             },
             "right" : {
-              "value" : 3,
-              "type" : "integer"
+              "type" : "integer",
+              "value" : 2
             }
-          }
+          },
+          "type" : "equals"
         }
       },
-      "metadata" : {
-        "_id" : 92625388831663
-      }
+      "type" : "else-if"
     }, {
-      "type" : "else",
       "children" : [ {
-        "type" : "log-message",
+        "metadata" : {
+          "_id" : 92625388831668
+        },
         "sources" : {
           "message" : {
-            "value" : "counter is something else",
-            "type" : "string"
+            "type" : "string",
+            "value" : "counter is three"
           }
         },
+        "type" : "log-message"
+      } ],
+      "metadata" : {
+        "_id" : 92625388831663
+      },
+      "sources" : {
+        "condition" : {
+          "sourceMap" : {
+            "left" : {
+              "source" : {
+                "type" : "string",
+                "value" : "counter"
+              },
+              "type" : "variable"
+            },
+            "right" : {
+              "type" : "integer",
+              "value" : 3
+            }
+          },
+          "type" : "equals"
+        }
+      },
+      "type" : "else-if"
+    }, {
+      "children" : [ {
         "metadata" : {
           "_id" : 92625388831666
-        }
+        },
+        "sources" : {
+          "message" : {
+            "type" : "string",
+            "value" : "counter is something else"
+          }
+        },
+        "type" : "log-message"
       } ],
       "metadata" : {
         "_id" : 92625388831664
-      }
+      },
+      "type" : "else"
     } ],
     "metadata" : {
       "_id" : 92625388831654
-    }
+    },
+    "type" : "scope"
   },
-  "tags" : [ ],
-  "metadata" : {
-    "path" : "",
-    "filename" : "if-elseif-else.muse"
-  }
+  "tags" : [ ]
 }

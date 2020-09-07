@@ -1,13 +1,17 @@
 {
   "type" : "junit-report-plugin",
+  "metadata" : {
+    "_filename" : "junit-report.muse",
+    "_path" : ""
+  },
   "parameters" : {
     "apply-condition" : {
-      "value" : true,
-      "type" : "boolean"
+      "type" : "boolean",
+      "value" : true
     },
     "auto-apply" : {
-      "value" : false,
-      "type" : "boolean"
+      "type" : "boolean",
+      "value" : false
     }
   },
   "tags" : [ ]

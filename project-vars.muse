@@ -1,66 +1,53 @@
 {
   "type" : "variables",
+  "metadata" : {
+    "_filename" : "project-vars.muse",
+    "_path" : ""
+  },
+  "tags" : [ ],
   "variables" : {
-    "provider" : {
-      "type" : "resource",
+    "browser" : {
       "source" : {
-        "value" : "local-provider",
-        "type" : "string"
-      }
+        "type" : "string",
+        "value" : "chrome"
+      },
+      "type" : "resource"
+    },
+    "browser-args" : {
+      "type" : "string",
+      "value" : "--headless"
     },
     "output_path" : {
-      "type" : "add",
-      "sourceList" : [ {
-        "type" : "property",
-        "sourceMap" : {
-          "name" : {
-            "value" : "java.io.tmpdir",
-            "type" : "string"
-          },
-          "target" : {
-            "type" : "property",
-            "sourceMap" : {
-              "name" : {
-                "value" : "props",
-                "type" : "string"
+      "sourceMap" : {
+        "name" : {
+          "type" : "string",
+          "value" : "WORKSPACE"
+        },
+        "target" : {
+          "sourceMap" : {
+            "name" : {
+              "type" : "string",
+              "value" : "vars"
+            },
+            "target" : {
+              "source" : {
+                "type" : "string",
+                "value" : "env"
               },
-              "target" : {
-                "type" : "sysvar",
-                "source" : {
-                  "value" : "env",
-                  "type" : "string"
-                }
-              }
+              "type" : "sysvar"
             }
-          }
-        }
-      }, {
-        "value" : "muse-jenkins-output/examples/",
-        "type" : "string"
-      }, {
-        "type" : "date-format",
-        "sourceMap" : {
-          "date" : {
-            "type" : "null"
           },
-          "format" : {
-            "value" : "yyyy.MMM.dd - hh.mm.ss.SSS aaa",
-            "type" : "string"
-          }
+          "type" : "property"
         }
-      } ]
+      },
+      "type" : "property"
     },
-    "browser" : {
-      "type" : "resource",
+    "provider" : {
       "source" : {
-        "value" : "chrome",
-        "type" : "string"
-      }
+        "type" : "string",
+        "value" : "local-provider"
+      },
+      "type" : "resource"
     }
-  },
-  "metadata" : {
-    "_path" : "",
-    "_filename" : "project-vars.muse"
-  },
-  "tags" : [ ]
+  }
 }

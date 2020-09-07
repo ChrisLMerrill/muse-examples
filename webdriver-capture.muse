@@ -1,0 +1,34 @@
+{
+  "type" : "webdriver-capture-plugin",
+  "metadata" : {
+    "_filename" : "webdriver-capture.muse",
+    "_path" : ""
+  },
+  "parameters" : {
+    "apply-condition" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "auto-apply" : {
+      "type" : "boolean",
+      "value" : false
+    },
+    "collect-html" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "collect-on-error" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "collect-on-fail" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "collect-screenshot" : {
+      "type" : "boolean",
+      "value" : true
+    }
+  },
+  "tags" : [ ]
+}

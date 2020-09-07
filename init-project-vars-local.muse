@@ -1,51 +1,53 @@
 {
   "type" : "variable-list-initializer",
+  "metadata" : {
+    "_filename" : "init-project-vars-local.muse",
+    "_path" : "",
+    "filename" : "init-project-vars-local.muse",
+    "path" : ""
+  },
   "parameters" : {
-    "listid" : {
-      "value" : "project-vars-local",
-      "type" : "string"
-    },
     "apply-condition" : {
-      "type" : "equals",
       "sourceMap" : {
         "left" : {
-          "type" : "property",
           "sourceMap" : {
             "name" : {
-              "value" : "JOB_NAME",
-              "type" : "string"
+              "type" : "string",
+              "value" : "JENKINS_HOME"
             },
             "target" : {
-              "type" : "property",
               "sourceMap" : {
                 "name" : {
-                  "value" : "vars",
-                  "type" : "string"
+                  "type" : "string",
+                  "value" : "vars"
                 },
                 "target" : {
-                  "type" : "sysvar",
                   "source" : {
-                    "value" : "env",
-                    "type" : "string"
-                  }
+                    "type" : "string",
+                    "value" : "env"
+                  },
+                  "type" : "sysvar"
                 }
-              }
+              },
+              "type" : "property"
             }
-          }
+          },
+          "type" : "property"
         },
         "right" : {
           "type" : "null"
         }
-      }
+      },
+      "type" : "equals"
     },
     "auto-apply" : {
-      "value" : false,
-      "type" : "boolean"
+      "type" : "boolean",
+      "value" : false
+    },
+    "listid" : {
+      "type" : "string",
+      "value" : "project-vars-local"
     }
-  },
-  "metadata" : {
-    "path" : "",
-    "filename" : "init-project-vars-local.muse"
   },
   "tags" : [ ]
 }

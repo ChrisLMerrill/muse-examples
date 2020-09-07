@@ -1,41 +1,48 @@
 {
   "type" : "compound-plugin",
+  "metadata" : {
+    "_filename" : "auto-plugins.muse",
+    "_path" : ""
+  },
   "parameters" : {
     "apply-condition" : {
-      "value" : true,
-      "type" : "boolean"
-    },
-    "lists" : {
-      "type" : "list",
-      "sourceList" : [ {
-        "value" : "init-project-vars",
-        "type" : "string"
-      }, {
-        "value" : "init-project-vars-local",
-        "type" : "string"
-      }, {
-        "value" : "local-storage-location",
-        "type" : "string"
-      }, {
-        "value" : "test-defaults-initializer",
-        "type" : "string"
-      }, {
-        "value" : "event-logger",
-        "type" : "string"
-      }, {
-        "value" : "test-results-saver",
-        "type" : "string"
-      }, {
-        "value" : "test-result-calculator",
-        "type" : "string"
-      }, {
-        "value" : "junit-report",
-        "type" : "string"
-      } ]
+      "type" : "boolean",
+      "value" : true
     },
     "auto-apply" : {
-      "value" : true,
-      "type" : "boolean"
+      "type" : "boolean",
+      "value" : true
+    },
+    "lists" : {
+      "sourceList" : [ {
+        "type" : "string",
+        "value" : "init-project-vars"
+      }, {
+        "type" : "string",
+        "value" : "init-project-vars-local"
+      }, {
+        "type" : "string",
+        "value" : "local-storage-location"
+      }, {
+        "type" : "string",
+        "value" : "test-defaults-initializer"
+      }, {
+        "type" : "string",
+        "value" : "event-logger"
+      }, {
+        "type" : "string",
+        "value" : "test-results-saver"
+      }, {
+        "type" : "string",
+        "value" : "test-result-calculator"
+      }, {
+        "type" : "string",
+        "value" : "webdriver-capture"
+      }, {
+        "type" : "string",
+        "value" : "junit-report"
+      } ],
+      "type" : "list"
     }
   },
   "tags" : [ ]
