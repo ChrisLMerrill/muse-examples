@@ -16,22 +16,22 @@
   "step" : {
     "children" : [ {
       "metadata" : {
-        "_id" : 14243678453762
+        "_id" : 92625388831724
       },
       "sources" : {
         "browser" : {
           "source" : {
             "type" : "string",
-            "value" : "firefox"
+            "value" : "browser"
           },
-          "type" : "resource"
+          "type" : "variable"
         },
         "provider" : {
           "source" : {
             "type" : "string",
-            "value" : "local-providers"
+            "value" : "provider"
           },
-          "type" : "resource"
+          "type" : "variable"
         }
       },
       "type" : "open-browser"
@@ -86,6 +86,41 @@
         "_id" : 14243678453774
       },
       "type" : "browser-fullscreen"
+    }, {
+      "metadata" : {
+        "_id" : 92625388831725
+      },
+      "type" : "browser-maximize"
+    }, {
+      "metadata" : {
+        "_id" : 92625388831727
+      },
+      "sources" : {
+        "height" : {
+          "type" : "integer",
+          "value" : 1200
+        },
+        "width" : {
+          "type" : "integer",
+          "value" : 800
+        }
+      },
+      "type" : "browser-size"
+    }, {
+      "metadata" : {
+        "_id" : 92625388831729
+      },
+      "sources" : {
+        "x" : {
+          "type" : "integer",
+          "value" : 100
+        },
+        "y" : {
+          "type" : "integer",
+          "value" : 100
+        }
+      },
+      "type" : "browser-position"
     }, {
       "metadata" : {
         "_id" : 14243678453764

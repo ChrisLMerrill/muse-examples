@@ -1,140 +1,150 @@
 {
-  "type" : "steppedtest",
+  "type" : "steppedtask",
+  "defaultVariables" : {
+    "password" : {
+      "type" : "string",
+      "value" : "SuperSecretPassword"
+    },
+    "username" : {
+      "type" : "string",
+      "value" : "tomsmith"
+    }
+  },
+  "inputSet" : {
+    "list" : [ ]
+  },
+  "metadata" : {
+    "_filename" : "login-test-failing.muse",
+    "_path" : "login-tests"
+  },
+  "outputSet" : {
+    "list" : [ ]
+  },
   "step" : {
-    "type" : "compound",
     "children" : [ {
-      "type" : "open-browser",
-      "sources" : {
-        "provider" : {
-          "type" : "variable",
-          "source" : {
-            "value" : "provider",
-            "type" : "string"
-          }
-        },
-        "browser" : {
-          "type" : "variable",
-          "source" : {
-            "value" : "browser",
-            "type" : "string"
-          }
-        }
-      },
       "metadata" : {
         "_id" : 92625388830732
-      }
-    }, {
-      "type" : "goto-url",
+      },
       "sources" : {
-        "URL" : {
-          "value" : "https://the-internet.herokuapp.com/",
-          "type" : "string"
+        "browser" : {
+          "source" : {
+            "type" : "string",
+            "value" : "browser"
+          },
+          "type" : "variable"
+        },
+        "provider" : {
+          "source" : {
+            "type" : "string",
+            "value" : "provider"
+          },
+          "type" : "variable"
         }
       },
+      "type" : "open-browser"
+    }, {
       "metadata" : {
         "_id" : 92625388830733
-      }
-    }, {
-      "type" : "click-element",
+      },
       "sources" : {
-        "element" : {
-          "type" : "element-linktext",
-          "source" : {
-            "value" : "Form Authentication",
-            "type" : "string"
-          }
+        "URL" : {
+          "type" : "string",
+          "value" : "https://the-internet.herokuapp.com/"
         }
       },
+      "type" : "goto-url"
+    }, {
       "metadata" : {
         "_id" : 92625388830837
-      }
-    }, {
-      "type" : "callfunction",
+      },
       "sources" : {
-        "id" : {
-          "value" : "form-login",
-          "type" : "string"
-        },
-        "user" : {
-          "type" : "variable",
+        "element" : {
           "source" : {
-            "value" : "username",
-            "type" : "string"
-          }
-        },
-        "pass" : {
-          "type" : "variable",
-          "source" : {
-            "value" : "password",
-            "type" : "string"
-          }
+            "type" : "string",
+            "value" : "Form Authentication"
+          },
+          "type" : "element-linktext"
         }
       },
+      "type" : "click-element"
+    }, {
       "metadata" : {
         "_id" : 92625388830734
-      }
-    }, {
-      "type" : "verify",
+      },
       "sources" : {
-        "condition" : {
-          "type" : "has-class",
-          "sourceMap" : {
-            "target" : {
-              "type" : "element-text",
-              "source" : {
-                "type" : "page-element",
-                "sourceMap" : {
-                  "page" : {
-                    "value" : "login-page",
-                    "type" : "string"
-                  },
-                  "element" : {
-                    "value" : "message-bar",
-                    "type" : "string"
-                  }
-                }
-              }
-            },
-            "pattern" : {
-              "value" : ".*cantfindthis[\\s\\S]*",
-              "type" : "string"
-            },
-            "class" : {
-              "value" : "not-this-class",
-              "type" : "string"
-            },
-            "element" : {
-              "type" : "element-id",
-              "source" : {
-                "value" : "flash",
-                "type" : "string"
-              }
-            }
-          }
+        "id" : {
+          "type" : "string",
+          "value" : "form-login"
+        },
+        "pass" : {
+          "source" : {
+            "type" : "string",
+            "value" : "password"
+          },
+          "type" : "variable"
+        },
+        "user" : {
+          "source" : {
+            "type" : "string",
+            "value" : "username"
+          },
+          "type" : "variable"
         }
       },
+      "type" : "callfunction"
+    }, {
       "metadata" : {
         "_id" : 92625388830735
-      }
+      },
+      "sources" : {
+        "condition" : {
+          "sourceMap" : {
+            "class" : {
+              "type" : "string",
+              "value" : "not-this-class"
+            },
+            "element" : {
+              "source" : {
+                "type" : "string",
+                "value" : "flash"
+              },
+              "type" : "element-id"
+            },
+            "pattern" : {
+              "type" : "string",
+              "value" : ".*cantfindthis[\\s\\S]*"
+            },
+            "target" : {
+              "source" : {
+                "sourceMap" : {
+                  "element" : {
+                    "type" : "string",
+                    "value" : "message-bar"
+                  },
+                  "page" : {
+                    "type" : "string",
+                    "value" : "login-page"
+                  }
+                },
+                "type" : "page-element"
+              },
+              "type" : "element-text"
+            }
+          },
+          "type" : "has-class"
+        }
+      },
+      "type" : "verify"
     }, {
-      "type" : "close-browser",
       "metadata" : {
         "_id" : 92625388830736
-      }
+      },
+      "type" : "close-browser"
     } ],
     "metadata" : {
       "_id" : 92625388830731
-    }
-  },
-  "defaultVariables" : {
-    "username" : {
-      "value" : "tomsmith",
-      "type" : "string"
     },
-    "password" : {
-      "value" : "SuperSecretPassword",
-      "type" : "string"
-    }
+    "type" : "compound"
   },
   "tags" : [ ]
 }

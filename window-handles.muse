@@ -16,22 +16,22 @@
   "step" : {
     "children" : [ {
       "metadata" : {
-        "_id" : 15940595548162
+        "_id" : 92625388831731
       },
       "sources" : {
         "browser" : {
           "source" : {
             "type" : "string",
-            "value" : "chrome"
+            "value" : "browser"
           },
-          "type" : "resource"
+          "type" : "variable"
         },
         "provider" : {
           "source" : {
             "type" : "string",
-            "value" : "local-providers"
+            "value" : "provider"
           },
-          "type" : "resource"
+          "type" : "variable"
         }
       },
       "type" : "open-browser"

@@ -103,6 +103,62 @@
         }
       },
       "type" : "verify"
+    }, {
+      "metadata" : {
+        "_id" : 92625388831719
+      },
+      "sources" : {
+        "name" : {
+          "type" : "string",
+          "value" : "int2"
+        },
+        "value" : {
+          "type" : "integer",
+          "value" : 74
+        }
+      },
+      "type" : "store-variable"
+    }, {
+      "metadata" : {
+        "_id" : 92625388831720
+      },
+      "sources" : {
+        "name" : {
+          "type" : "string",
+          "value" : "int2"
+        },
+        "value" : {
+          "source" : {
+            "type" : "string",
+            "value" : "int2"
+          },
+          "type" : "variable"
+        }
+      },
+      "type" : "increment-string-integer"
+    }, {
+      "metadata" : {
+        "_id" : 92625388831722
+      },
+      "sources" : {
+        "condition" : {
+          "sourceMap" : {
+            "left" : {
+              "source" : {
+                "type" : "string",
+                "value" : "int2"
+              },
+              "type" : "variable"
+            },
+            "right" : {
+              "type" : "string",
+              "value" : "75"
+            }
+          },
+          "type" : "equals"
+        }
+      },
+      "type" : "verify"
     } ],
     "metadata" : {
       "_id" : 92625388830741
